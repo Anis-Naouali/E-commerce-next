@@ -29,6 +29,17 @@ const signup = () => {
               />
             </div>
             <div>
+              <label  defaultValue={"name"} htmlFor="email" className="block font-bold text-gray-700">
+                Last name              </label>
+              <input
+                id="last-name"
+                type="last-name"
+                placeholder="Enter your last name"
+                className="w-full px-4 py-3 mt-1 border-gray-300 rounded-md focus:border-indigo-500 focus:ring focus:ring-indigo-200"
+                required
+              />
+            </div>
+            <div>
               <label htmlFor="email" className="block font-bold text-gray-700">
                 Email address
               </label>
