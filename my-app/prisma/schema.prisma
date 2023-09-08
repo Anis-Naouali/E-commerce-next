@@ -1,40 +1,52 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
-  provider = "prisma-client-js"
+    provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mysql"
   url      = env("DATABASE_URL")
 }
+
 model User {
-  id Int @id @default(autoincrement())
-  name String
-  email String
+  id       Int      @id @default(autoincrement())
+  name     String
+  email    String   @unique
+  role     String
   password String
+
+  products Products[]
+  favs     fav[]
+  carts    cart[]
 }
 
 model Products {
-  id Int @id @default(autoincrement())
-  title String
+  id          Int     @id @default(autoincrement())
+  title       String
   description String
-  image_url String
-  category String
-  rating String
-  price String
+  image_url   String    @db.LongText
+  category    String
+  rating      String
+  price       String
   num_reviews String
-  user_id Int
+  user_id     Int
+  user        User    @relation(fields: [user_id], references: [id])
+  fav         fav[]
+  cart        cart[]
 }
 
+
 model fav {
-  id Int @id @default(autoincrement())
-  user_id Int
+  id         Int     @id @default(autoincrement())
+  user_id    Int
   product_id Int
+  user       User    @relation(fields: [user_id], references: [id])
+  product    Products @relation(fields: [product_id], references: [id])
 }
+
 model cart {
-  id Int @id @default(autoincrement())
-  user_id Int
+  id         Int     @id @default(autoincrement())
+  user_id    Int
   product_id Int
+  user       User    @relation(fields: [user_id], references: [id])
+  product    Products @relation(fields: [product_id], references: [id])
 }
