@@ -1,4 +1,3 @@
-import React from 'react'
 
 
 const signup = () => {
@@ -66,6 +65,7 @@ const signup = () => {
                 required
               />
             </div>
+            
             <div>
               <button
                 type="submit"
