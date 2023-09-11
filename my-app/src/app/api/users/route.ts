@@ -14,7 +14,7 @@ export const GET = async (req: NextRequest) => {
 export const POST = async (req: Request) => {
   try {
     const body = await req.json();
-    const { email, name, password, role } = body;
+    const { email, name,LastName, password, role } = body;
 
     const user = await prisma.user.findFirst({
       where: {
@@ -32,6 +32,7 @@ export const POST = async (req: Request) => {
     const newData = await prisma.user.create({
       data: {
         name: name,
+        LastName:LastName,
         email: email,
         password: hashedPassword,
         role,
@@ -56,12 +57,13 @@ export const PUT = async (req: NextRequest) => {
 
     const body = await req.json();
 
-    const { name, email, password, role } = body;
+    const { name,LastName, email, password, role } = body;
 
     const user = await prisma.user.update({
       where: { id: users_id },
       data: {
         name,
+        LastName,
         email,
         password,
         role,
@@ -77,33 +79,3 @@ export const PUT = async (req: NextRequest) => {
     return NextResponse.json({ error }, { status: 500 });
   }
 };
-
-// import { NextResponse, NextRequest } from 'next/server';
-// import prisma from '@/../../lib/prisma';
-
-// export const POST = async (req: NextRequest) => {
-//   try {
-//     const body = await req.json();
-//     const { email, password } = body;
-//     const user = await prisma.user.findFirst({
-//       where: {
-//         email: email,
-//       },
-//     });
-
-//     if (!user) {
-//       return NextResponse.json({ message: 'Invalid email or password' }, { status: 401 });
-//     }
-
-//     const isValid = await bcrypt.compare(password, user.password);
-
-//     if (!isValid) {
-//       return NextResponse.json({ message: 'Invalid email or password' }, { status: 401 });
-//     }
-
-//     return NextResponse.json({ userId: user.id, userEmail: user.email }, { status: 200 });
-//   } catch (error) {
-//     return NextResponse.json({ error }, { status: 500 });
-//   }
-// };
-
