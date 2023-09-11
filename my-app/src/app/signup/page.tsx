@@ -1,50 +1,44 @@
-'use client'
+"use client"
 import React, { useState } from 'react';
+import axios from 'axios';
 
-import Link from 'next/link';
+function signup() {
+  const [name, setName] = useState('');
+  const [LastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [role,setRole]=useState ("user")
+  const [errorMessage, setErrorMessage] = useState('');
 
-const signup: React.FC = () => {
-  const [useremail, setEmail] = useState('');
-  const [userpw, setPassword] = useState('');
-  const [username, setName] = useState('');
-  const [error, setError] = useState('');
+  const handleSubmit = async (event:any) => {
+    event.preventDefault();
   
-  const [selectedRole, setSelectedRole] = useState<any>(null); // Set the initial state type
-
-  const roleOptions = [
-    { value: 'user', label: 'User' },
-    { value: 'admin', label: 'Admin' },
-  ];
-console.log(username);
-
-  const handleSubmit = async (e?: React.FormEvent<HTMLFormElement>) => {
-    console.log("hi");
-    
-    if (e) {
-      e.preventDefault();
+    if (role !== 'admin' && role !== 'user') {
+      setErrorMessage('Invalid role');
+      return; 
     }
-    const newUser = {
-      name: username,
-      lastname:"",
-      email:useremail,
-      password:userpw,
-      role: selectedRole?.value ?? '',
-      status:0
-    };
-
+  
     try {
-      const res = await axios.post('http://localhost:3000/api/user', newUser);
-      console.log(res.data)
-      window.localStorage.setItem('User', JSON.stringify(res.data));
-     
-      window.location.href = '/';
+      const response = await axios.post('http://localhost:3000/api/users', {
+        name,
+        LastName,
+        email,
+        password,
+        role
+      });
+
+  
+      if (response.data.success) {
+        console.log('User created successfully!');
+      } else {
+        setErrorMessage('Invalid credentials');
+      }
     } catch (error) {
-      error ? console.log(error) : console.log("done");
-      
-      
+      console.error(error);
+      setErrorMessage('An error occurred while creating the user');
     }
   };
-
+  
 
   return (
     <div className="flex flex-col items-center md:flex-row md:h-screen">
@@ -73,8 +67,8 @@ console.log(username);
               </label>
               <input
                 id="name"
-                type="name"
                 value={name}
+                onChange={(event) => setName(event.target.value)}
                 placeholder="Enter your name"
                 className="w-full px-4 py-3 mt-1 border-gray-300 rounded-md focus:border-indigo-500 focus:ring focus:ring-indigo-200"
                 required
@@ -91,7 +85,8 @@ console.log(username);
               <input
                 id="last-name"
                 type="last-name"
-                // value={lastName}
+                value={LastName}
+                onChange={(event) => setLastName(event.target.value)}
                 placeholder="Enter your last name"
                 className="w-full px-4 py-3 mt-1 border-gray-300 rounded-md focus:border-indigo-500 focus:ring focus:ring-indigo-200"
                 required
@@ -104,7 +99,8 @@ console.log(username);
               <input
                 id="email"
                 type="email"
-                // value={email}
+                value={email}
+                onChange={(event) => setEmail(event.target.value)}
                 placeholder="Enter your email"
                 className="w-full px-4 py-3 mt-1 border-gray-300 rounded-md focus:border-indigo-500 focus:ring focus:ring-indigo-200"
                 required
@@ -120,13 +116,36 @@ console.log(username);
               <input
                 id="password"
                 type="password"
-                // value={password}
+                value={password}
+            onChange={(event) => setPassword(event.target.value)}
                 placeholder="Enter your password"
                 className="w-full px-4 py-3 mt-1 border-gray-300 rounded-md focus:border-indigo-500 focus:ring focus:ring-indigo-200"
                 required
               />
             </div>
-
+            <div className="mt-4">
+          <label className="block font-bold text-gray-700">User Type</label>
+          <div className="flex items-center">
+            <label className="mr-4">
+              <input
+                type="radio"
+                value="user"
+                checked={role === 'user'}
+                onChange={() => setRole('user')}
+              />
+              User
+            </label>
+            <label>
+              <input
+                type="radio"
+                value="admin"
+                checked={role === 'admin'}
+                onChange={() => setRole('admin')}
+              />
+              Admin
+            </label>
+          </div>
+        </div>
             <div>
               <button
                 type="submit"
@@ -134,6 +153,9 @@ console.log(username);
               >
                 Create account
               </button>
+              {errorMessage && (
+            <span className="text-sm text-red-500">{errorMessage}</span>
+          )}
             </div>
           </form>
         </div>

@@ -16,6 +16,12 @@ export const POST = async (req: Request) => {
     const body = await req.json();
     const { email, name,LastName, password, role } = body;
 
+
+    if (role !== 'admin' && role !== 'user') {
+      return new Response(JSON.stringify({ message: 'Invalid role' }), {
+        status: 400, // You can choose the appropriate HTTP status code
+      });
+    }
     const user = await prisma.user.findFirst({
       where: {
         email: email,

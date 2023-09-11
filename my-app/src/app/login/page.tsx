@@ -1,8 +1,31 @@
-import React from 'react'
+"use client"
 
+import React, { useState } from 'react';
+import axios from 'axios';
 
-const login = () => {
+function login() { 
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
+  const handleSubmit = async (event:any) => {
+    event.preventDefault();
+
+    try {
+      const response = await axios.post('http://localhost:3000/api/auth/login', {
+        email,
+        password,
+      });
+      if (response.data.success) {
+        console.log('Login successful!');
+      } else {
+        setErrorMessage('Invalid credentials');
+      }
+    } catch (error) {
+      console.error(error);
+      setErrorMessage('An error occurred during login');
+    }
+  };
 
     return (
         <div className="flex flex-col items-center md:flex-row md:h-screen">
@@ -17,7 +40,7 @@ const login = () => {
                             Enter your details below
                         </p>
                     </div>
-                    <form className="mt-8 space-y-6">
+                    <form onSubmit={handleSubmit} className="mt-8 space-y-6">
                         <div>
                             <label htmlFor="email" className="block font-bold text-gray-700">
                          Email address
@@ -25,6 +48,8 @@ const login = () => {
                             <input
                                 id="email"
                                 type="email"
+                                value={email}
+                                onChange={(event) => setEmail(event.target.value)}
                                 placeholder="Enter your email"
                                 className="w-full px-4 py-3 mt-1 border-gray-300 rounded-md focus:border-indigo-500 focus:ring focus:ring-indigo-200"
                                 required
@@ -40,6 +65,8 @@ const login = () => {
                             <input
                                 id="password"
                                 type="password"
+                                value={password}
+                                onChange={(event) => setPassword(event.target.value)}
                                 placeholder="Enter your password"
                                 className="w-full px-4 py-3 mt-1 border-gray-300 rounded-md focus:border-indigo-500 focus:ring focus:ring-indigo-200"
                                 required
@@ -52,6 +79,9 @@ const login = () => {
                             >
                                 Login
                             </button>
+                            {errorMessage && (
+                <span className="text-sm text-red-500">{errorMessage}</span>
+              )}
                         </div>
                     </form>
                 </div>
