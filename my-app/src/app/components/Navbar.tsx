@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
    
 
-    <div className='h-20 w-full border-b-2 flex items-center justify-between p-2'>
+    <div className='h-20 w-full border-b-2 flex items-center justify-between  p-2'>
 
 {/* <div className="w-28 h-6 justify-center items-center inline-flex">
   <div className="text-black text-2xl font-bold leading-normal tracking-wide">Exclusive</div>
@@ -19,7 +19,7 @@ const Navbar = () => {
 
         <ul className='flex'>
 
-      <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-black h-8 mr-20">Exclusive</span>
+      <span className="self-center text-2xl ml-20 font-semibold whitespace-nowrap dark:text-black h-8 mr-20">Exclusive</span>
   
 
             <li className='self-center mr-6 cursor-pointer'>
