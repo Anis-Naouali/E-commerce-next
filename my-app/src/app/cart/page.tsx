@@ -5,16 +5,7 @@ const page = () => {
 
 
         <div className="flex flex-col items-center justify-start gap-[1.5rem] mb-20 mt-20" >
-<div className="absolute top-[13.88rem] left-[8.44rem] flex flex-row items-center justify-start gap-[0.75rem]">
-        <div className="relative leading-[1.31rem] opacity-[0.5]">Home</div>
-        <img
-          className="relative w-[0.43rem] h-[0.76rem]"
-          alt=""
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Draw-1-black-line.svg/1200px-Draw-1-black-line.svg.png"
-        />
-        <div className="relative leading-[1.31rem]">Cart</div>
-      </div>
-            
+
             <div className="flex flex-col items-start justify-start gap-[2.5rem]">
                 <div className="relative rounded bg-bg shadow-[0px_1px_13px_rgba(0,_0,_0,_0.05)] w-[73.13rem] h-[4.5rem] overflow-hidden shrink-0">
                     <div className="absolute top-[1.5rem] left-[2.5rem] flex flex-row items-center justify-start gap-[17.75rem]">
