@@ -1,10 +1,45 @@
-import Link from "next/link";
+"use client"
 
+import Link from "next/link";
+import React, { useState } from 'react';
+import axios from 'axios';
 export default function Account() {
+
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [address, setAddress] = useState('');
+  const [currentPassword, setCurrentPassword] = useState('');
+  const [newPassword, setNewPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+
+  const handleFormSubmit = async (event:any) => {
+    event.preventDefault();
+
+    try {
+      const response = await axios.put('/api/product', {
+        firstName,
+        lastName,
+        email,
+        address,
+        currentPassword,
+        newPassword,
+        confirmPassword,
+      });
+
+      if (response.data.success) {
+        console.log('Profile updated successfully');
+      } else {
+        console.error('Profile update failed');
+      }
+    } catch (error) {
+      console.error('An error occurred:', error);
+    }
+  };
   return (
     <main className="flex min-h-screen flex-col items-center justify-between pl-5 pr-5">
 
-      <div className="inline-flex gap-10">
+      <div  className="inline-flex gap-10">
         <div className="w-48 h-72 relative">
           <p className="left-0 top-0 absolute text-black text-base font-medium leading-normal">
             Manage My Account
@@ -55,6 +90,7 @@ export default function Account() {
         </div>
 
         <div className="w-[870px] h-[630px] relative bg-white rounded shadow">
+          <form onSubmit={handleFormSubmit} >
           <div className="left-[80px] top-[40px] absolute text-red-500 text-xl font-medium leading-7">
             Edit Your Profile
           </div>
@@ -64,6 +100,8 @@ export default function Account() {
                 First Name
               </p>
               <input
+               value={firstName}
+               onChange={(e) => setFirstName(e.target.value)}
                 placeholder="Your First Name"
                 className="pl-4 w-80 h-12 left-0 top-0 relative bg-neutral-100 rounded"
               />
@@ -73,6 +111,8 @@ export default function Account() {
                 Last Name
               </p>
               <input
+              value={lastName}
+              onChange={(e) => setLastName(e.target.value)}
                 placeholder="Your Last Name"
                 className="pl-4 w-80 h-12 left-0 top-0 relative bg-neutral-100 rounded"
               />
@@ -84,6 +124,8 @@ export default function Account() {
                 Email
               </p>
               <input
+               value={email}
+               onChange={(e) => setEmail(e.target.value)}
                 placeholder="email"
                 type="email"
                 className="pl-4 w-80 h-12 left-0 top-0 relative bg-neutral-100 rounded"
@@ -94,6 +136,8 @@ export default function Account() {
                 Address
               </p>
               <input
+               value={address}
+               onChange={(e) => setAddress(e.target.value)}
                 placeholder="Kingston, 5236, United State"
                 className="pl-4 w-80 h-12 left-0 top-0 relative bg-neutral-100 rounded"
               />
@@ -105,17 +149,23 @@ export default function Account() {
                 Password Changes
               </p>
               <input
+               value={currentPassword}
+               onChange={(e) => setCurrentPassword(e.target.value)}
                 placeholder="Current Password"
                 type="password"
                 className="pl-4 w-[690px] h-12 left-0 top-0 relative bg-neutral-100 rounded"
               />
             </div>
             <input
+            value={newPassword}
+            onChange={(e) => setNewPassword(e.target.value)}
               placeholder="New Password"
               type="password"
               className="pl-4 w-[690px] h-12 left-0 top-0 relative bg-neutral-100 rounded"
             />
             <input
+             value={confirmPassword}
+             onChange={(e) => setConfirmPassword(e.target.value)}
               placeholder="Confirm Password"
               type="password"
               className="pl-4 w-[690px] h-12 left-0 top-0 relative bg-neutral-100 rounded"
@@ -132,6 +182,7 @@ export default function Account() {
                 Save Changes
             </button>
           </div>
+          </form>
         </div>
       </div>
 
