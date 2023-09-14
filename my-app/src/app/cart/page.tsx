@@ -25,18 +25,7 @@ const page = () => {
                     <div className="absolute top-[1.72rem] left-[44.28rem] rounded box-border w-[4.69rem] h-[2.94rem] overflow-hidden border-[1.5px] border-solid border-gray-200">
                         <div className="absolute top-[0.38rem] left-[0.75rem] w-[3rem] flex flex-row items-center justify-start gap-[1rem]">
                             <div className="relative leading-[1.5rem]">01</div>
-                            <div className="flex flex-col items-start justify-start">
-                                <img
-                                    className="relative w-[1rem] h-[1rem] overflow-hidden shrink-0"
-                                    alt=""
-                                    src="/dropupsmall.svg"
-                                />
-                                <img
-                                    className="relative w-[1rem] h-[1rem] overflow-hidden shrink-0"
-                                    alt=""
-                                    src="/dropdownsmall.svg"
-                                />
-                            </div>
+                            
                         </div>
                     </div>
                     <div className="absolute top-[calc(50%_-_27px)] left-[calc(50%_-_545px)] w-[3.38rem] h-[3.38rem] overflow-hidden">
@@ -56,47 +45,33 @@ const page = () => {
 
 
                 </div>
-                <div className="relative rounded bg-bg shadow-[0px_1px_13px_rgba(0,_0,_0,_0.05)] w-[73.13rem] h-[6.38rem] overflow-hidden shrink-0">
-                    <div className="absolute top-[2.44rem] left-[24.19rem] leading-[1.5rem]">
-                        $550
-                    </div>
-                    <div className="absolute top-[2.44rem] left-[66.44rem] leading-[1.5rem]">
-                        $1100
-                    </div>
-                    <div className="absolute top-[1.72rem] left-[44.28rem] rounded box-border w-[4.69rem] h-[2.94rem] overflow-hidden border-[1.5px] border-solid border-gray-200">
-                        <div className="absolute top-[0.38rem] left-[0.75rem] w-[3rem] flex flex-row items-center justify-start gap-[0.75rem]">
-                            <div className="relative leading-[1.5rem]">02</div>
-                            <div className="flex flex-col items-start justify-start">
-                                <img
-                                    className="relative w-[1rem] h-[1rem] overflow-hidden shrink-0"
-                                    alt=""
-                                    src="/dropupsmall1.svg"
-                                />
-                                <img
-                                    className="relative w-[1rem] h-[1rem] overflow-hidden shrink-0"
-                                    alt=""
-                                    src=""
-                                />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="absolute top-[calc(50%_-_27px)] left-[calc(50%_-_545px)] w-[3.38rem] h-[3.38rem] overflow-hidden">
-                        <img
-                            className="absolute h-[78.19%] w-[90.53%] top-[11.11%] right-[3.92%] bottom-[10.7%] left-[5.56%] max-w-full overflow-hidden max-h-full object-cover"
-                            alt=""
-                            src="https://www.candere.com/media/jewellery/images/KCGN291_1.jpeg"
-                        />
-                    </div>
-                    <div className="absolute top-[2.44rem] left-[7.13rem] leading-[1.5rem]">
-                        Gold Necklace
-                    </div>
-                    <img
-                        className="absolute top-[1.25rem] left-[1.88rem] w-[1.5rem] h-[1.5rem] overflow-hidden"
-                        alt=""
-                        src='https://cdn.iconscout.com/icon/free/png-256/free-delete-4095676-3389247.png?f=webp'
-                    />
-                </div>
+
+
+
+                
+
+
+              
+
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <div className="items-start gap-[757px] inline-flex relative">
 
                 <button className="w-50 h-14 px-12 py-4 rounded border border-black border-opacity-50 justify-center items-center gap-2.5 inline-flex">
@@ -139,16 +114,7 @@ const page = () => {
                             <div className="text-neutral-50 text-base font-medium leading-normal">Procees to checkout</div>
                         </div>
                     </button>
-                    <img
-                        className="absolute top-[7.69rem] left-[1.5rem] w-[26.38rem] h-[0.06rem] opacity-[0.4]"
-                        alt=""
-                        src="/underline.svg"
-                    />
-                    <img
-                        className="absolute top-[11.19rem] left-[1.5rem] w-[26.38rem] h-[0.06rem] opacity-[0.4]"
-                        alt=""
-                        src="/underline1.svg"
-                    />
+                    
                 </div>
             </div>
         </div>
