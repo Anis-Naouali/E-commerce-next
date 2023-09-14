@@ -27,186 +27,20 @@ export default function ContactForm() {
              
       }
   return (
-    <div>
-        <div className="frame" style={{
-      position:"relative",
-      width: '340px',
-      height: '457px',
-      backgroundColor: '',
-      borderRadius: '4px',
-      overflow: 'hidden',
-      marginLeft:"250px",
-      marginTop:"250px",
-      boxShadow: ' 4px 6px rgba(0, 0, , 0.1) ',
+    <div >
+        <div className=" ml-72 m-12 bg-red-500 max-w-[300px] rounded-xl hover:bg-red-500 hover:scale-110 duration-700 p-5">
+  <figure className="w-10 h-10 p-2 bg-white rounded-md">
+    
+  </figure>
+  <h4 className="py-2 text-white font-bold">Jesus Echeverria</h4>
+  <p className="text-base leading-7 text-white font-semibold space-y-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+  <p className=" text-sm leading-7 text-slate-300 space-y-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro est numquam ipsa consequatur provident fugiat quaerat cupiditate temporibus cum?</p>
+  <div className="pt-5 pb-2 flex justify-center">
+    <button className="w-36 h-10 font-semibold rounded-md bg-indigo-100 hover:scale-90 duration-500">Button</button>
+  </div>
+</div>
 
-    }}>
-
-      <div className="div" style={{
-        flexDirection: 'column',
-        alignItems: 'flex-start',
-        gap: '32px',
-        top: '40px',
-        left: '35px',
-        display: 'inline-flex',
-        position: 'relative',
-      }}>
-        <div className="div-2" style={{
-          flexDirection: 'column',
-          alignItems: 'flex-start',
-          gap: '24px',
-          flex: '0 0 auto',
-          display: 'inline-flex',
-          position: 'relative',
-        }}>
-          <div className="div-3" style={{
-            alignItems: 'center',
-            gap: '16px',
-            flex: '0 0 auto',
-            display: 'inline-flex',
-            position: 'relative',
-          }}>
-            <img className="img" style={{
-              position: 'relative',
-              width: '40px',
-              height: '40px',
-            }} src="https://c.animaapp.com/SOPTQci4/img/icons-phone.svg" alt="Phone Icon" />
-            <div className="text-wrapper" style={{
-              position: 'relative',
-              width: 'fit-content',
-              fontFamily: 'var(--title-16px-medium-font-family)',
-              fontWeight: 'var(--title-16px-medium-font-weight)',
-              color: '#000000',
-              fontSize: 'var(--title-16px-medium-font-size)',
-              letterSpacing: 'var(--title-16px-medium-letter-spacing)',
-              lineHeight: 'var(--title-16px-medium-line-height)',
-              whiteSpace: 'nowrap',
-              fontStyle: 'var(--title-16px-medium-font-style)',
-            }}>Call To Us</div>
-          </div>
-          <div className="div-4" style={{
-            flexDirection: 'column',
-            alignItems: 'flex-start',
-            gap: '16px',
-            flex: '0 0 auto',
-            display: 'inline-flex',
-            position: 'relative',
-          }}>
-            <p className="p" style={{
-              position: 'relative',
-              width: '262px',
-              marginTop: '-1px',
-              fontFamily: 'var(--title-14px-regular-font-family)',
-              fontWeight: 'var(--title-14px-regular-font-weight)',
-              color: 'var(--text-2)',
-              fontSize: 'var(--title-14px-regular-font-size)',
-              letterSpacing: 'var(--title-14px-regular-letter-spacing)',
-              lineHeight: 'var(--title-14px-regular-line-height)',
-              fontStyle: 'var(--title-14px-regular-font-style)',
-            }}>We are available 24/7, 7 days a week.</p>
-            <div className="text-wrapper-2" style={{
-              position: 'relative',
-              width: 'fit-content',
-              fontFamily: 'var(--title-14px-regular-font-family)',
-              fontWeight: 'var(--title-14px-regular-font-weight)',
-              color: 'var(--text-2)',
-              fontSize: 'var(--title-14px-regular-font-size)',
-              letterSpacing: 'var(--title-14px-regular-letter-spacing)',
-              lineHeight: 'var(--title-14px-regular-line-height)',
-              whiteSpace: 'nowrap',
-              fontStyle: 'var(--title-14px-regular-font-style)',
-            }}>Phone: +8801611112222</div>
-          </div>
-        </div>
-        <div className="under-line" style={{
-          position: 'relative',
-          width: '270px',
-          height: '1px',
-          opacity: '0.5',
-          backgroundImage: 'url(https://c.animaapp.com/SOPTQci4/img/line-1.svg)',
-          backgroundSize: 'cover',
-          backgroundPosition: '50% 50%',
-        }}></div>
-        <div className="div-2" style={{
-          flexDirection: 'column',
-          alignItems: 'flex-start',
-          gap: '24px',
-          flex: '0 0 auto',
-          display: 'inline-flex',
-          position: 'relative',
-        }}>
-          <div className="div-3" style={{
-            alignItems: 'center',
-            gap: '16px',
-            flex: '0 0 auto',
-            display: 'inline-flex',
-            position: 'relative',
-          }}>
-            <img className="img" style={{
-              position: 'relative',
-              width: '40px',
-              height: '40px',
-            }} src="https://c.animaapp.com/SOPTQci4/img/mail-hover.svg" alt="Mail Icon" />
-            <div className="text-wrapper" style={{
-              position: 'relative',
-              width: 'fit-content',
-              fontFamily: 'var(--title-16px-medium-font-family)',
-              fontWeight: 'var(--title-16px-medium-font-weight)',
-              color: '#000000',
-              fontSize: 'var(--title-16px-medium-font-size)',
-              letterSpacing: 'var(--title-16px-medium-letter-spacing)',
-              lineHeight: 'var(--title-16px-medium-line-height)',
-              whiteSpace: 'nowrap',
-              fontStyle: 'var(--title-16px-medium-font-style)',
-            }}>Write To Us</div>
-          </div>
-          <div className="div-4" style={{
-            flexDirection: 'column',
-            alignItems: 'flex-start',
-            gap: '16px',
-            flex: '0 0 auto',
-            display: 'inline-flex',
-            position: 'relative',
-          }}>
-            <p className="text-wrapper-3" style={{
-              position: 'relative',
-              width: '250px',
-              marginTop: '-1px',
-              fontFamily: 'var(--title-14px-regular-font-family)',
-              fontWeight: 'var(--title-14px-regular-font-weight)',
-              color: 'var(--text-2)',
-              fontSize: 'var(--title-14px-regular-font-size)',
-              letterSpacing: 'var(--title-14px-regular-letter-spacing)',
-              lineHeight: 'var(--title-14px-regular-line-height)',
-              fontStyle: 'var(--title-14px-regular-font-style)',
-            }}>Fill out our form and we will contact you within 24 hours.</p>
-            <div className="text-wrapper-2" style={{
-              position: 'relative',
-              width: 'fit-content',
-              fontFamily: 'var(--title-14px-regular-font-family)',
-              fontWeight: 'var(--title-14px-regular-font-weight)',
-              color: 'var(--text-2)',
-              fontSize: 'var(--title-14px-regular-font-size)',
-              letterSpacing: 'var(--title-14px-regular-letter-spacing)',
-              lineHeight: 'var(--title-14px-regular-line-height)',
-              whiteSpace: 'nowrap',
-              fontStyle: 'var(--title-14px-regular-font-style)',
-            }}>Emails: customer@exclusive.com</div>
-            <div className="text-wrapper-2" style={{
-              position: 'relative',
-              width: 'fit-content',
-              fontFamily: 'var(--title-14px-regular-font-family)',
-              fontWeight: 'var(--title-14px-regular-font-weight)',
-              color: 'var(--text-2)',
-              fontSize: 'var(--title-14px-regular-font-size)',
-              letterSpacing: 'var(--title-14px-regular-letter-spacing)',
-              lineHeight: 'var(--title-14px-regular-line-height)',
-              whiteSpace: 'nowrap',
-              fontStyle: 'var(--title-14px-regular-font-style)',
-            }}>Emails: support@exclusive.com</div>
-          </div>
-        </div>
-      </div>
-    </div>
+        
 
 
 
@@ -218,7 +52,7 @@ export default function ContactForm() {
       overflow: "hidden",
       boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)" ,
       marginLeft : "900px" ,
-      marginTop: "-598px",
+      marginTop: "-464px",
       position: "absolute"
     }}>
       <div className="div" style={{
@@ -319,6 +153,8 @@ export default function ContactForm() {
         </button>
       </div>
     </form>
+    <br />
+    
     </div>
   )
 }
