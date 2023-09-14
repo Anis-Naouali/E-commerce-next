@@ -9,9 +9,10 @@ const page = () => {
       backgroundColor: 'var(--primary)',
       borderRadius: '4px',
       overflow: 'hidden',
-      boxShadow: '0 4px 6px rgba(0, 0, , 0.1) ',
       marginLeft:"250px",
       marginTop:"250px",
+      boxShadow: '0 4px 6px rgba(0, 0, , 0.1) ',
+
     }}>
 
       <div className="div" style={{

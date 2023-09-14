@@ -1,10 +1,69 @@
-import React from 'react'
+'use client'
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import { useRouter } from 'next/navigation'
+import Swal from 'sweetalert2';
 
-const page = () => {
-    return (
+const cart: React.FC = () => {
+  const router = useRouter()
+  const [errorMessage, setErrorMessage] = useState("");
+  const [cartData, setCartData] = useState<any[]>([]);
 
+  useEffect(() => {
+    const fetchCartData = async () => {
+      try {
+        const response = await axios.get("http://localhost:3000/api/cart");
+        if (response.data.success) {
+          setCartData(response.data.cartItems);
+        }
+      } catch (error) {
+        console.error(error);
+        setErrorMessage("An error occurred while fetching the cart data");
+      }
+    };
 
-        <div className="flex flex-col items-center justify-start gap-[1.5rem] mb-20 mt-20" >
+    fetchCartData();
+  }, []);
+  const handleCheckoutClick = () => {
+    Swal.fire({
+      title: 'Are you sure?',
+      text: 'You won\'t be able to revert this!',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, checkout!'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // Perform the checkout process here (e.g., make an API request)
+        
+        // After successful checkout, empty the cart
+        setCartData([]);
+        
+        Swal.fire(
+          'Checked Out!',
+          'Your cart has been emptied.',
+          'success'
+        );
+      }
+    });
+  };
+  const calculateSubtotal = (item: any) => {
+    const quantity = item.quantity;
+    const price = parseFloat(item.product.price.replace("$", ""));
+    return (quantity * price).toFixed(2);
+  };
+  return (
+    <div className="flex flex-col items-center justify-start gap-[1.5rem] mb-20 mt-20">
+      <div className="absolute top-[13.88rem] left-[8.44rem] flex flex-row items-center justify-start gap-[0.75rem]">
+        <div className="relative leading-[1.31rem] opacity-[0.5]">Home</div>
+        <img
+          className="relative w-[0.43rem] h-[0.76rem]"
+          alt=""
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Draw-1-black-line.svg/1200px-Draw-1-black-line.svg.png"
+        />
+        <div className="relative leading-[1.31rem]">Cart</div>
+      </div>
 
             <div className="flex flex-col items-start justify-start gap-[2.5rem]">
                 <div className="relative rounded bg-bg shadow-[0px_1px_13px_rgba(0,_0,_0,_0.05)] w-[73.13rem] h-[4.5rem] overflow-hidden shrink-0">
@@ -25,7 +84,18 @@ const page = () => {
                     <div className="absolute top-[1.72rem] left-[44.28rem] rounded box-border w-[4.69rem] h-[2.94rem] overflow-hidden border-[1.5px] border-solid border-gray-200">
                         <div className="absolute top-[0.38rem] left-[0.75rem] w-[3rem] flex flex-row items-center justify-start gap-[1rem]">
                             <div className="relative leading-[1.5rem]">01</div>
-                            
+                            <div className="flex flex-col items-start justify-start">
+                                <img
+                                    className="relative w-[1rem] h-[1rem] overflow-hidden shrink-0"
+                                    alt=""
+                                    src="/dropupsmall.svg"
+                                />
+                                <img
+                                    className="relative w-[1rem] h-[1rem] overflow-hidden shrink-0"
+                                    alt=""
+                                    src="/dropdownsmall.svg"
+                                />
+                            </div>
                         </div>
                     </div>
                     <div className="absolute top-[calc(50%_-_27px)] left-[calc(50%_-_545px)] w-[3.38rem] h-[3.38rem] overflow-hidden">
@@ -45,33 +115,47 @@ const page = () => {
 
 
                 </div>
-
-
-
-                
-
-
-              
-
+                <div className="relative rounded bg-bg shadow-[0px_1px_13px_rgba(0,_0,_0,_0.05)] w-[73.13rem] h-[6.38rem] overflow-hidden shrink-0">
+                    <div className="absolute top-[2.44rem] left-[24.19rem] leading-[1.5rem]">
+                        $550
+                    </div>
+                    <div className="absolute top-[2.44rem] left-[66.44rem] leading-[1.5rem]">
+                        $1100
+                    </div>
+                    <div className="absolute top-[1.72rem] left-[44.28rem] rounded box-border w-[4.69rem] h-[2.94rem] overflow-hidden border-[1.5px] border-solid border-gray-200">
+                        <div className="absolute top-[0.38rem] left-[0.75rem] w-[3rem] flex flex-row items-center justify-start gap-[0.75rem]">
+                            <div className="relative leading-[1.5rem]">02</div>
+                            <div className="flex flex-col items-start justify-start">
+                                <img
+                                    className="relative w-[1rem] h-[1rem] overflow-hidden shrink-0"
+                                    alt=""
+                                    src="/dropupsmall1.svg"
+                                />
+                                <img
+                                    className="relative w-[1rem] h-[1rem] overflow-hidden shrink-0"
+                                    alt=""
+                                    src=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="absolute top-[calc(50%_-_27px)] left-[calc(50%_-_545px)] w-[3.38rem] h-[3.38rem] overflow-hidden">
+                        <img
+                            className="absolute h-[78.19%] w-[90.53%] top-[11.11%] right-[3.92%] bottom-[10.7%] left-[5.56%] max-w-full overflow-hidden max-h-full object-cover"
+                            alt=""
+                            src="https://www.candere.com/media/jewellery/images/KCGN291_1.jpeg"
+                        />
+                    </div>
+                    <div className="absolute top-[2.44rem] left-[7.13rem] leading-[1.5rem]">
+                        Gold Necklace
+                    </div>
+                    <img
+                        className="absolute top-[1.25rem] left-[1.88rem] w-[1.5rem] h-[1.5rem] overflow-hidden"
+                        alt=""
+                        src='https://cdn.iconscout.com/icon/free/png-256/free-delete-4095676-3389247.png?f=webp'
+                    />
+                </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <div className="items-start gap-[757px] inline-flex relative">
 
                 <button className="w-50 h-14 px-12 py-4 rounded border border-black border-opacity-50 justify-center items-center gap-2.5 inline-flex">
@@ -114,11 +198,20 @@ const page = () => {
                             <div className="text-neutral-50 text-base font-medium leading-normal">Procees to checkout</div>
                         </div>
                     </button>
-                    
+                    <img
+                        className="absolute top-[7.69rem] left-[1.5rem] w-[26.38rem] h-[0.06rem] opacity-[0.4]"
+                        alt=""
+                        src="/underline.svg"
+                    />
+                    <img
+                        className="absolute top-[11.19rem] left-[1.5rem] w-[26.38rem] h-[0.06rem] opacity-[0.4]"
+                        alt=""
+                        src="/underline1.svg"
+                    />
                 </div>
             </div>
         </div>
     )
 }
 
-export default page
+export default cart;
