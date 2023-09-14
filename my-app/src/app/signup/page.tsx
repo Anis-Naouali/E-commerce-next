@@ -39,7 +39,7 @@ function signup() {
   
 
   return (
-    <div className="flex flex-col items-center md:flex-row md:h-screen">
+    <div className="flex flex-col items-center md:flex-row mt-10 md:h-screen">
       <div className="flex items-center justify-center w-full md:w-1/2">
         <img
           src="https://i.pinimg.com/1200x/55/61/7d/55617d321f690bee67b399d767843a5f.jpg"
@@ -123,7 +123,7 @@ function signup() {
             </div>
             <div className="mt-4">
           <label className="block font-bold text-gray-700">User Type</label>
-          <div className="flex items-center">
+          <div className="flex items-center mb-10">
             <label className="mr-4">
               <input
                 type="radio"
@@ -147,7 +147,7 @@ function signup() {
             <div>
               <button
                 type="submit"
-                className="w-full px-4 py-3 font-bold text-white bg-red-500 rounded-md  focus:outline-none focus:shadow-outline-indigo focus:border-indigo-700"
+                className="w-full px-4 py-3 font-bold  mb-8 text-white bg-red-500 rounded-md  focus:outline-none focus:shadow-outline-indigo focus:border-indigo-700"
               >
                 Create account
               </button>
