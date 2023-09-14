@@ -1,5 +1,48 @@
+'use client'
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+
+
+interface data {
+  images: { id: number; url: string; productId: number }[] & {
+    id: number,
+    title: string,
+    description: string,
+    category: string,
+    rating: number,
+    price: number,
+    num_reviews: number,
+  }[];
+}
+
+
+
+
+
+
+
 export default function Home() {
+    const [data, setdata] = useState<data[]>([]);
+  
+  const data1 = data.slice(16,24)
+    useEffect(() => {
+      axios
+        .get("http://localhost:3000/api/product")
+        .then((res) => {
+          setdata(res.data);
+          console.log(data);
+        })
+        .catch((err) => {
+          console.log(err, "err");
+        });
+    }, []);
+  
+    console.log(data);
+
+  
+
   return (
+    
     <main className="">
       <div className="relative bg-bg w-full h-[274.88rem] overflow-hidden text-left text-[1rem] text-text font-title-12px-medium">
         <div className="absolute top-[83.42rem] left-[8.42rem] box-border w-[73.16rem] h-[0.03rem] opacity-[0.3] border-t-[0.5px] border-solid border-text2" />
@@ -741,7 +784,7 @@ export default function Home() {
 
 
 
-        <div className="absolute top-[133.56rem] left-[8.44rem] flex flex-col items-center justify-start gap-[3.75rem]">
+        <div className="absolute top-[133.56rem] left-[3.44rem] flex flex-col items-center justify-start gap-[3.75rem]">
           <div className="flex flex-col items-center justify-start gap-[3.75rem]">
             <div className="flex flex-row items-end justify-start gap-[42rem]">
               <div className="flex flex-col items-start justify-start gap-[1.25rem]">
@@ -781,287 +824,46 @@ export default function Home() {
 
 
 
-              <div className=" grid grid-cols-4 gap-4 items-start justify-start gap-[1.88rem]">
+              <div className=" grid grid-cols-4 gap-4 items-start justify-start gap-[1.88rem] ">
 
 
-                <div className="flex flex-col items-center justify-center gap-[1rem] text-text">
-                  <div className="relative rounded bg-secondary w-[16.88rem] h-[15.63rem] overflow-hidden shrink-0">
-                    <div className="absolute w-full right-[0%] bottom-[0rem] left-[0%] rounded-t-none rounded-b bg-text2 h-[2.56rem]" />
 
 
-                    <div className="absolute top-[0.94rem] left-[2.5rem] w-[11.88rem] h-[11.25rem] overflow-hidden">
-                      <img
-                        className="absolute top-[0.13rem] left-[0.25rem] w-[11.38rem] h-[11rem] object-cover"
-                        alt=""
-                        src=""
-                      />
-                    </div>
-                    <div className=" absolute top-[calc(50%_+_92px)] left-[calc(50%_-_51.5px)] w-35 flex flex-row items-center justify-start gap-[0.5rem] text-bg">
-                      <button className="bg-black text-white font-bold  justify-center py-1 px-3 rounded">
-                        Add to cart
-                      </button>
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-center justify-center gap-[0.5rem] text-[1rem] text-text2">
-                    <div className="relative leading-[1.5rem] font-medium">
-                      Gucci duffle bag
-                    </div>
-                    <div className="flex flex-row items-center justify-center gap-[0.75rem] text-secondary-2">
-                      <div className="relative leading-[1.5rem] font-medium">
-                        $960
+
+
+              {data1.map((e, i) => {
+                  return (
+                    <div className="flex flex-col items-center justify-center gap-[1rem] text-text">
+                      <div className="relative rounded bg-secondary w-[16.88rem] h-[15.63rem] overflow-hidden shrink-0">
+                        <div className="absolute w-full right-[0%] bottom-[0rem] left-[0%] rounded-t-none rounded-b bg-text2 h-[2.56rem]" />
+
+
+                        <div className="absolute top-[0.94rem] left-[2.5rem] w-[11.88rem] h-[11.25rem] overflow-hidden">
+                          <img
+                            className="absolute top-[0.13rem] left-[0.25rem] w-[11.38rem] h-[11rem] object-cover"
+                            alt=""
+                            src={e.images[1].url}
+                          />
+                        </div>
+                        <div className=" absolute top-[calc(50%_+_92px)] left-[calc(50%_-_51.5px)] w-35 flex flex-row items-center justify-start gap-[0.5rem] text-bg">
+                          <button className="bg-black text-white font-bold  justify-center py-1 px-3 rounded">
+                            Add to cart
+                          </button>
+                        </div>
                       </div>
-
-                    </div>
-                  </div>
-                </div>
-
-
-
-
-                <div className="flex flex-col items-center justify-center gap-[1rem] text-text">
-                  <div className="relative rounded bg-secondary w-[16.88rem] h-[15.63rem] overflow-hidden shrink-0">
-                    <div className="absolute w-full right-[0%] bottom-[0rem] left-[0%] rounded-t-none rounded-b bg-text2 h-[2.56rem]" />
-
-
-                    <div className="absolute top-[0.94rem] left-[2.5rem] w-[11.88rem] h-[11.25rem] overflow-hidden">
-                      <img
-                        className="absolute top-[0.13rem] left-[0.25rem] w-[11.38rem] h-[11rem] object-cover"
-                        alt=""
-                        src=""
-                      />
-                    </div>
-                    <div className=" absolute top-[calc(50%_+_92px)] left-[calc(50%_-_51.5px)] w-35 flex flex-row items-center justify-start gap-[0.5rem] text-bg">
-                      <button className="bg-black text-white font-bold  justify-center py-1 px-3 rounded">
-                        Add to cart
-                      </button>
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-center justify-center gap-[0.5rem] text-[1rem] text-text2">
-                    <div className="relative leading-[1.5rem] font-medium">
-                      Gucci duffle bag
-                    </div>
-                    <div className="flex flex-row items-center justify-center gap-[0.75rem] text-secondary-2">
-                      <div className="relative leading-[1.5rem] font-medium">
-                        $960
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex flex-col items-center justify-center gap-[1rem] text-text">
-                  <div className="relative rounded bg-secondary w-[16.88rem] h-[15.63rem] overflow-hidden shrink-0">
-                    <div className="absolute w-full right-[0%] bottom-[0rem] left-[0%] rounded-t-none rounded-b bg-text2 h-[2.56rem]" />
-
-
-                    <div className="absolute top-[0.94rem] left-[2.5rem] w-[11.88rem] h-[11.25rem] overflow-hidden">
-                      <img
-                        className="absolute top-[0.13rem] left-[0.25rem] w-[11.38rem] h-[11rem] object-cover"
-                        alt=""
-                        src=""
-                      />
-                    </div>
-                    <div className=" absolute top-[calc(50%_+_92px)] left-[calc(50%_-_51.5px)] w-35 flex flex-row items-center justify-start gap-[0.5rem] text-bg">
-                      <button className="bg-black text-white font-bold  justify-center py-1 px-3 rounded">
-                        Add to cart
-                      </button>
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-center justify-center gap-[0.5rem] text-[1rem] text-text2">
-                    <div className="relative leading-[1.5rem] font-medium">
-                      Gucci duffle bag
-                    </div>
-                    <div className="flex flex-row items-center justify-center gap-[0.75rem] text-secondary-2">
-                      <div className="relative leading-[1.5rem] font-medium">
-                        $960
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-
-
-
-                <div className="flex flex-col items-center justify-center gap-[1rem] text-text">
-                  <div className="relative rounded bg-secondary w-[16.88rem] h-[15.63rem] overflow-hidden shrink-0">
-                    <div className="absolute w-full right-[0%] bottom-[0rem] left-[0%] rounded-t-none rounded-b bg-text2 h-[2.56rem]" />
-
-
-                    <div className="absolute top-[0.94rem] left-[2.5rem] w-[11.88rem] h-[11.25rem] overflow-hidden">
-                      <img
-                        className="absolute top-[0.13rem] left-[0.25rem] w-[11.38rem] h-[11rem] object-cover"
-                        alt=""
-                        src=""
-                      />
-                    </div>
-                    <div className=" absolute top-[calc(50%_+_92px)] left-[calc(50%_-_51.5px)] w-35 flex flex-row items-center justify-start gap-[0.5rem] text-bg">
-                      <button className="bg-black text-white font-bold  justify-center py-1 px-3 rounded">
-                        Add to cart
-                      </button>
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-center justify-center gap-[0.5rem] text-[1rem] text-text2">
-                    <div className="relative leading-[1.5rem] font-medium">
-                      Gucci duffle bag
-                    </div>
-                    <div className="flex flex-row items-center justify-center gap-[0.75rem] text-secondary-2">
-                      <div className="relative leading-[1.5rem] font-medium">
-                        $960
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <div className="flex flex-col items-center justify-center gap-[1rem] text-text">
-                  <div className="relative rounded bg-secondary w-[16.88rem] h-[15.63rem] overflow-hidden shrink-0">
-                    <div className="absolute w-full right-[0%] bottom-[0rem] left-[0%] rounded-t-none rounded-b bg-text2 h-[2.56rem]" />
-
-
-                    <div className="absolute top-[0.94rem] left-[2.5rem] w-[11.88rem] h-[11.25rem] overflow-hidden">
-                      <img
-                        className="absolute top-[0.13rem] left-[0.25rem] w-[11.38rem] h-[11rem] object-cover"
-                        alt=""
-                        src=""
-                      />
-                    </div>
-                    <div className=" absolute top-[calc(50%_+_92px)] left-[calc(50%_-_51.5px)] w-35 flex flex-row items-center justify-start gap-[0.5rem] text-bg">
-                      <button className="bg-black text-white font-bold  justify-center py-1 px-3 rounded">
-                        Add to cart
-                      </button>
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-center justify-center gap-[0.5rem] text-[1rem] text-text2">
-                    <div className="relative leading-[1.5rem] font-medium">
-                      Gucci duffle bag
-                    </div>
-                    <div className="flex flex-row items-center justify-center gap-[0.75rem] text-secondary-2">
-                      <div className="relative leading-[1.5rem] font-medium">
-                        $960
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-
-
-
-
-                <div className="flex flex-col items-center justify-center gap-[1rem] text-text">
-                  <div className="relative rounded bg-secondary w-[16.88rem] h-[15.63rem] overflow-hidden shrink-0">
-                    <div className="absolute w-full right-[0%] bottom-[0rem] left-[0%] rounded-t-none rounded-b bg-text2 h-[2.56rem]" />
-
-
-                    <div className="absolute top-[0.94rem] left-[2.5rem] w-[11.88rem] h-[11.25rem] overflow-hidden">
-                      <img
-                        className="absolute top-[0.13rem] left-[0.25rem] w-[11.38rem] h-[11rem] object-cover"
-                        alt=""
-                        src=""
-                      />
-                    </div>
-                    <div className=" absolute top-[calc(50%_+_92px)] left-[calc(50%_-_51.5px)] w-35 flex flex-row items-center justify-start gap-[0.5rem] text-bg">
-                      <button className="bg-black text-white font-bold  justify-center py-1 px-3 rounded">
-                        Add to cart
-                      </button>
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-center justify-center gap-[0.5rem] text-[1rem] text-text2">
-                    <div className="relative leading-[1.5rem] font-medium">
-                      Gucci duffle bag
-                    </div>
-                    <div className="flex flex-row items-center justify-center gap-[0.75rem] text-secondary-2">
-                      <div className="relative leading-[1.5rem] font-medium">
-                        $960
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-
-
-
-
-
-                <div className="flex flex-col items-center justify-center gap-[1rem] text-text">
-                  <div className="relative rounded bg-secondary w-[16.88rem] h-[15.63rem] overflow-hidden shrink-0">
-                    <div className="absolute w-full right-[0%] bottom-[0rem] left-[0%] rounded-t-none rounded-b bg-text2 h-[2.56rem]" />
-
-
-                    <div className="absolute top-[0.94rem] left-[2.5rem] w-[11.88rem] h-[11.25rem] overflow-hidden">
-                      <img
-                        className="absolute top-[0.13rem] left-[0.25rem] w-[11.38rem] h-[11rem] object-cover"
-                        alt=""
-                        src=""
-                      />
-                    </div>
-                    <div className=" absolute top-[calc(50%_+_92px)] left-[calc(50%_-_51.5px)] w-35 flex flex-row items-center justify-start gap-[0.5rem] text-bg">
-                      <button className="bg-black text-white font-bold  justify-center py-1 px-3 rounded">
-                        Add to cart
-                      </button>
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-center justify-center gap-[0.5rem] text-[1rem] text-text2">
-                    <div className="relative leading-[1.5rem] font-medium">
-                      Gucci duffle bag
-                    </div>
-                    <div className="flex flex-row items-center justify-center gap-[0.75rem] text-secondary-2">
-                      <div className="relative leading-[1.5rem] font-medium">
-                        $960
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-
-
-
-
-
-
-
-
-                <div className="flex flex-col items-center justify-center gap-[1rem] text-text">
-                  <div className="relative rounded bg-secondary w-[16.88rem] h-[15.63rem] overflow-hidden shrink-0">
-                    <div className="absolute w-full right-[0%] bottom-[0rem] left-[0%] rounded-t-none rounded-b bg-text2 h-[2.56rem]" />
-
-
-                    <div className="absolute top-[0.94rem] left-[2.5rem] w-[11.88rem] h-[11.25rem] overflow-hidden">
-                      <img
-                        className="absolute top-[0.13rem] left-[0.25rem] w-[11.38rem] h-[11rem] object-cover"
-                        alt=""
-                        src=""
-                      />
-                    </div>
-                    <div className=" absolute top-[calc(50%_+_92px)] left-[calc(50%_-_51.5px)] w-35 flex flex-row items-center justify-start gap-[0.5rem] text-bg">
-                      <button className="bg-black text-white font-bold  justify-center py-1 px-3 rounded">
-                        Add to cart
-                      </button>
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-center justify-center gap-[0.5rem] text-[1rem] text-text2">
-                    <div className="relative leading-[1.5rem] font-medium">
-                      Gucci duffle bag
-                    </div>
-                    <div className="flex flex-row items-center justify-center gap-[0.75rem] text-secondary-2">
-                      <div className="relative leading-[1.5rem] font-medium">
-                        $960
+                      <div className="flex flex-col items-center justify-center gap-[0.5rem] text-[1rem] text-text2">
+                        <div className="relative leading-[1.5rem] font-medium">
+                          {e.title}
+                        </div>
+                        <div className="flex flex-row items-center justify-center gap-[0.75rem] text-secondary-2">
+                          <div className="relative leading-[1.5rem] font-medium">
+                            {e.price}$
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
+                  );
+                })}
               </div>
 
 
@@ -1069,61 +871,6 @@ export default function Home() {
 
 
               <div className="flex flex-row items-start justify-start gap-[1.88rem]">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
