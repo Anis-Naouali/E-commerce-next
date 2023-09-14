@@ -14,12 +14,12 @@ export const GET = async (req: NextRequest) => {
 export const POST = async (req: Request) => {
   try {
     const body = await req.json();
-    const { email, name,LastName, password, role } = body;
+    const { email, name,LastName, password, role ,adresse } = body;
 
 
     if (role !== 'admin' && role !== 'user') {
       return new Response(JSON.stringify({ message: 'Invalid role' }), {
-        status: 400, // You can choose the appropriate HTTP status code
+        status: 400,
       });
     }
     const user = await prisma.user.findFirst({
@@ -42,6 +42,7 @@ export const POST = async (req: Request) => {
         email: email,
         password: hashedPassword,
         role,
+        adresse:adresse,
       },
     });
 
@@ -63,7 +64,7 @@ export const PUT = async (req: NextRequest) => {
 
     const body = await req.json();
 
-    const { name,LastName, email, password, role } = body;
+    const { name,LastName, email, password, role ,adresse} = body;
 
     const user = await prisma.user.update({
       where: { id: users_id },
@@ -73,6 +74,7 @@ export const PUT = async (req: NextRequest) => {
         email,
         password,
         role,
+        adresse
       },
     });
 

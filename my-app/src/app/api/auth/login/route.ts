@@ -4,7 +4,6 @@ import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 require('dotenv').config();
 import { serialize } from "cookie";
-import path from 'path';
 
 
 export const POST = async (req: NextRequest) => {
@@ -32,7 +31,7 @@ export const POST = async (req: NextRequest) => {
 
       const token = jwt.sign({ userId: user.id }, secret, { expiresIn: '1h' });
 
-      const serialized = serialize ("jwt",token,{
+      const serialized = serialize ("token",token,{
         httpOnly: true, 
         maxAge: 60*60*24*30,
         sameSite: 'strict',
@@ -40,9 +39,7 @@ export const POST = async (req: NextRequest) => {
         path : "/" 
       });
     
-
-
-      return NextResponse.json({ message: 'Successfully logged in' },{headers :{"Set-Cookie" : serialized}});
+      return NextResponse.json({ message: 'Successfully logged in',role:user.role },{headers :{"Set-Cookie" : serialized}});
     } else {
       return NextResponse.json({ message: 'Wrong password' });
     }
@@ -51,3 +48,6 @@ export const POST = async (req: NextRequest) => {
     return NextResponse.json({ message: 'Error' }, { status: 500 });
   }
 };
+
+
+

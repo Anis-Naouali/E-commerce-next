@@ -1,16 +1,34 @@
 import React, { useState } from 'react'
 import { useRouter } from 'next/navigation'
+import { deleteCookie } from 'cookies-next';
+import axios from 'axios';
+import Link from 'next/link';
 
-const ProfilNavBar = () => {
-  const router = useRouter()
+
+const ProfilNavBar: React.FC = () => {
+  const router = useRouter();
 
   const [menuVisible, setMenuVisible] = useState(false);
 
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
   };
+ 
+  const handleLogOut = async (event: any) => {
+    event.preventDefault();
 
-
+    try {
+      const response = await axios.post(
+        "http://localhost:3000/api/logout");
+      if (response.data.message) {
+        
+          window.location.href = "/";
+        }
+      }
+    catch (error) {
+      console.error(error);
+    };
+}
   return (
 
     <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 absolute right-0 ">
@@ -83,7 +101,8 @@ const ProfilNavBar = () => {
           role="menuitem"
           id="user-menu-item-0"
         >
-          Manage my account        </a>
+          <Link href="/Account">Manage my account   </Link>
+                </a>
         <a onClick={toggleMenu}
 
           href="#"
@@ -91,7 +110,7 @@ const ProfilNavBar = () => {
           role="menuitem"
           id="user-menu-item-1"
         >
-          My order
+         <Link href="/cart"> My order</Link>
         </a>
         <a onClick={toggleMenu}
 
@@ -109,7 +128,7 @@ const ProfilNavBar = () => {
           id="user-menu-item-2"
         >
           My reviews        </a>
-        <a onClick={toggleMenu}
+        <a onClick={handleLogOut}
 
           href="#"
           className="block px-4 py-2 text-sm text-gray-700"

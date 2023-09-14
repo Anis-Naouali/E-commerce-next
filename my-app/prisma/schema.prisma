@@ -14,7 +14,7 @@ model User {
   email    String   @unique
   role     String
   password String
-
+  adresse  String
   products Products[]
   favs     fav[]
   carts    cart[]
@@ -29,6 +29,7 @@ model Products {
   rating      String
   price       String
   num_reviews String
+  product     String
   user_id     Int
   user        User    @relation(fields: [user_id], references: [id])
   fav         fav[]

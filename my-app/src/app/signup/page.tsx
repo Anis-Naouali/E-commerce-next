@@ -8,6 +8,7 @@ function signup() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [role,setRole]=useState ("user")
+  const [adresse,setAdress]=useState("")
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = async (event:any) => {
@@ -17,21 +18,18 @@ function signup() {
       setErrorMessage('Invalid role');
       return; 
     }
-  
     try {
       const response = await axios.post('http://localhost:3000/api/users', {
         name,
         LastName,
         email,
         password,
-        role
+        role,
+        adresse
       });
-
-  
-      if (response.data.success) {
+      if (response.data.message) {
         console.log('User created successfully!');
-      } else {
-        setErrorMessage('Invalid credentials');
+         window.location.href='/login'
       }
     } catch (error) {
       console.error(error);

@@ -35,9 +35,6 @@ const cart: React.FC = () => {
       confirmButtonText: 'Yes, checkout!'
     }).then((result) => {
       if (result.isConfirmed) {
-        // Perform the checkout process here (e.g., make an API request)
-        
-        // After successful checkout, empty the cart
         setCartData([]);
         
         Swal.fire(
