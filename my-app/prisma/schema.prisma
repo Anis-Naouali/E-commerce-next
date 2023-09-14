@@ -23,24 +23,25 @@ model User {
 model Products {
   id          Int       @id @default(autoincrement())
   title       String
-  description String
+  description String    @db.Text
   category    String
   rating      Float
   price       Float
   num_reviews Int
+  user        User      @relation(fields: [user_id], references: [id])
+  user_id      Int
   images      Image[]
-  user        User      @relation(fields: [userId], references: [id])
-  userId      Int
   favs        fav[]
   carts       cart[]
 }
 
 model Image {
-  id        Int         @id @default(autoincrement())
-  url       String
-  productId Int
-  product   Products   @relation(fields: [productId], references: [id])
+  id        Int      @id @default(autoincrement())
+  url       String   @db.Text 
+  product_id Int
+  product   Products @relation(fields: [product_id], references: [id])
 }
+
 
 model fav {
   id         Int     @id @default(autoincrement())

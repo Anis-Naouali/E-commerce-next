@@ -26,7 +26,7 @@ function Login() {
         if (ro === "user") {
           window.location.href = "/";
         } else if (ro === "admin") {
-          window.location.href = "/admin/dashboard";
+          window.location.href = "/admin/dash";
         }
       } else {
         setErrorMessage("Invalid credentials");
