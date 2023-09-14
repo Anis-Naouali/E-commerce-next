@@ -738,6 +738,9 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+
+
         <div className="absolute top-[133.56rem] left-[8.44rem] flex flex-col items-center justify-start gap-[3.75rem]">
           <div className="flex flex-col items-center justify-start gap-[3.75rem]">
             <div className="flex flex-row items-end justify-start gap-[42rem]">
@@ -775,6 +778,9 @@ export default function Home() {
 
 
             <div className="flex flex-col items-start justify-start gap-[3.75rem] text-text2">
+
+
+
               <div className=" grid grid-cols-4 gap-4 items-start justify-start gap-[1.88rem]">
 
 
@@ -1132,6 +1138,12 @@ export default function Home() {
             </button>
           </div>
         </div>
+
+
+
+
+
+
         <div className="absolute top-[200.81rem] left-[8.44rem] flex flex-col items-start justify-start gap-[3.75rem]">
           <div className="flex flex-col items-start justify-start gap-[1.25rem]">
             <div className="flex flex-row items-center justify-start gap-[1rem]">
