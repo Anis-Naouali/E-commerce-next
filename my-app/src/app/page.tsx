@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="mb-50">
+    <main className="">
       <div className="relative bg-bg w-full h-[274.88rem] overflow-hidden text-left text-[1rem] text-text font-title-12px-medium">
         <div className="absolute top-[83.42rem] left-[8.42rem] box-border w-[73.16rem] h-[0.03rem] opacity-[0.3] border-t-[0.5px] border-solid border-text2" />
         <div className="absolute top-[112.36rem] left-[8.42rem] box-border w-[73.16rem] h-[0.03rem] opacity-[0.3] border-t-[0.5px] border-solid border-text2" />
@@ -122,7 +122,7 @@ export default function Home() {
 
 
 
-            <div className="flex flex-row items-start justify-start gap-[0.5rem]">
+            {/* <div className="flex flex-row items-start justify-start gap-[0.5rem]">
               <img
                 className="relative w-[2.88rem] h-[2.88rem] object-cover"
                 alt=""
@@ -133,7 +133,7 @@ export default function Home() {
                 alt=""
                 src="https://cdn-icons-png.flaticon.com/512/32/32213.png"
               />
-            </div>
+            </div> */}
           </div>
           <div className="w-[81.75rem]  flex flex-row items-start justify-start gap-[1.88rem] text-[0.75rem] text-text">
             <div className="flex flex-col items-start justify-start gap-[1rem]">
@@ -1183,8 +1183,8 @@ export default function Home() {
                     alt=""
                     src="https://img.freepik.com/premium-photo/sea-collection-grey-marble-background-seashell-motherofpearl-earrings-summer-jewelry-metal-chain-motherofpearl-shells_653979-3839.jpg"
                   />
-                  
-                  
+
+
                 </div>
               </div>
             </div>
