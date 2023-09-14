@@ -16,7 +16,7 @@ const page = () => {
 
 
 
-            
+
 
             <div className="flex flex-col items-start justify-start gap-[1rem] text-text">
               <div className="relative rounded bg-secondary w-[16.88rem] h-[15.63rem] overflow-hidden shrink-0">
