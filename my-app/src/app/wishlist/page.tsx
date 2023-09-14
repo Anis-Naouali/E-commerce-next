@@ -13,6 +13,11 @@ const page = () => {
             </button>
           </div>
           <div className="flex flex-row items-start justify-start gap-[1.88rem] text-left text-[0.75rem] text-bg">
+
+
+
+            
+
             <div className="flex flex-col items-start justify-start gap-[1rem] text-text">
               <div className="relative rounded bg-secondary w-[16.88rem] h-[15.63rem] overflow-hidden shrink-0">
                 <div className="absolute w-full right-[0%] bottom-[0rem] left-[0%] rounded-t-none rounded-b bg-text2 h-[2.56rem]" />
@@ -53,6 +58,9 @@ const page = () => {
                 </div>
               </div>
             </div>
+
+
+
             <div className="flex flex-col items-start justify-start gap-[1rem]">
               <div className="relative rounded bg-secondary w-[16.88rem] h-[15.63rem] overflow-hidden shrink-0">
                 <div className="absolute w-full right-[0%] bottom-[0rem] left-[0%] rounded-t-none rounded-b bg-text2 h-[2.56rem]" />
