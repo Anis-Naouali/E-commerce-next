@@ -1,4 +1,4 @@
-import {NextResponse,NextRequest} from 'next/server';
+import { NextResponse, NextRequest } from "next/server";
 import prisma from "@/../../lib/prisma";
 
 export const POST = async (req: NextRequest) => {
@@ -6,7 +6,10 @@ export const POST = async (req: NextRequest) => {
     const body = await req.json();
 
     if (!Array.isArray(body)) {
-      return NextResponse.json({ message: 'Invalid request body' }, { status: 400 });
+      return NextResponse.json(
+        { message: "Invalid request body" },
+        { status: 400 }
+      );
     }
 
     const createdProducts = [];
@@ -20,7 +23,7 @@ export const POST = async (req: NextRequest) => {
         price,
         num_reviews,
         user_id,
-        images
+        images,
       } = productData;
 
       const product = await prisma.products.create({
@@ -33,34 +36,39 @@ export const POST = async (req: NextRequest) => {
           num_reviews,
           user: {
             connect: {
-              id: user_id
-            }
+              id: user_id,
+            },
           },
           images: {
             create: images.map((image: { url: string }) => ({
-              url: image.url
-            }))
-          }
-        }
+              url: image.url,
+            })),
+          },
+        },
       });
 
       if (!product) {
-        return NextResponse.json({ message: 'Failed to create product' }, { status: 401 });
+        return NextResponse.json(
+          { message: "Failed to create product" },
+          { status: 401 }
+        );
       }
 
       createdProducts.push(product);
     }
 
-    return NextResponse.json({ message: 'Products created successfully', createdProducts }, { status: 201 });
+    return NextResponse.json(
+      { message: "Products created successfully", createdProducts },
+      { status: 201 }
+    );
   } catch (error) {
     console.error(error);
-    return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
+    return NextResponse.json(
+      { error: "Internal server error" },
+      { status: 500 }
+    );
   }
 };
-
-
-
-
 
 export const PUT = async (req: NextRequest) => {
   try {
@@ -78,7 +86,7 @@ export const PUT = async (req: NextRequest) => {
       price,
       num_reviews,
       user_id,
-      images: updatedImages 
+      images: updatedImages,
     } = body;
 
     const product = await prisma.products.update({
@@ -92,17 +100,18 @@ export const PUT = async (req: NextRequest) => {
         num_reviews,
         user_id,
       },
+      include: {
+        images: true, 
+      },
     });
 
     if (!product) {
       return NextResponse.json({ message: 'Failed to update product' }, { status: 404 });
     }
 
-    await prisma.image.deleteMany({
-      where: {
-        product_id: product.id,
-      },
-    });
+    for (const image of product.images) {
+      await prisma.image.delete({ where: { id: image.id } });
+    }
 
     const createdImages = await prisma.image.createMany({
       data: updatedImages.map((image: { url: string }) => ({
@@ -111,49 +120,69 @@ export const PUT = async (req: NextRequest) => {
       })),
     });
 
-    return NextResponse.json({ message: 'Product updated successfully', product, images: createdImages }, { status: 200 });
+    return NextResponse.json(
+      { message: 'Product updated successfully', product, images: createdImages },
+      { status: 200 }
+    );
   } catch (error) {
     return NextResponse.json({ error }, { status: 500 });
   }
 };
 
 
-  export const DELETE = async (req: NextRequest) => {
-    try {
-      const { searchParams } = new URL(req.url);
-      const id = searchParams.has('ID') ? searchParams.get('ID') : undefined;
-      const productId = id ? parseInt(id, 10) : undefined;
-  
-      if (!productId) {
-        return NextResponse.json({ message: 'Invalid request', status: 400 });
-      }
-  
-      const product = await prisma.products.findUnique({
-        where: { id: productId },
-      });
-  
-      if (!product) {
-        return NextResponse.json({ message: 'Product not found', status: 404 });
-      }
-  
-      await prisma.products.delete({ where: { id: productId } });
-  
-      return NextResponse.json({ message: 'Product deleted successfully' }, { status: 200 });
-    } catch (error) {
-      return NextResponse.json({ error }, { status: 500 });
+export const DELETE = async (req: NextRequest) => {
+  try {
+    const { searchParams } = new URL(req.url);
+    const id = searchParams.has("ID") ? searchParams.get("ID") : undefined;
+    const productId = id ? parseInt(id, 10) : undefined;
+    console.log("Received DELETE request for product ID:", productId);
+
+    if (!productId) {
+      return NextResponse.json({ message: "Invalid request", status: 400 });
     }
-  };
-  export const GET = async (req: NextRequest) => {
-    try {
-      const products = await prisma.products.findMany({
-        include: {
-          images: true,
-        },
-      });
-  
-      return NextResponse.json(products);
-    } catch (error) {
-      return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
+
+    const product = await prisma.products.findUnique({
+      where: { id: productId },
+      include: {
+        images: true,
+      },
+    });
+
+    if (!product) {
+      return NextResponse.json({ message: "Product not found", status: 404 });
     }
-  };
-  
+
+    for (const image of product.images) {
+      await prisma.image.delete({ where: { id: image.id } });
+    }
+
+    await prisma.products.delete({
+      where: { id: productId },
+    });
+
+    return NextResponse.json(
+      { message: "Product deleted successfully" },
+      { status: 200 }
+    );
+  } catch (error) {
+    console.error("Error deleting product:", error);
+    return NextResponse.json({ error }, { status: 500 });
+  }
+};
+
+export const GET = async (req: NextRequest) => {
+  try {
+    const products = await prisma.products.findMany({
+      include: {
+        images: true,
+      },
+    });
+
+    return NextResponse.json(products);
+  } catch (error) {
+    return NextResponse.json(
+      { error: "Internal server error" },
+      { status: 500 }
+    );
+  }
+};

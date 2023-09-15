@@ -1,6 +1,13 @@
 import React from 'react'
 
-const Footer = () => {
+interface FooterProps {
+  showFooter: boolean;
+}
+
+    const Footer: React.FC<FooterProps> = ({ showFooter }) => {
+      if (!showFooter) {
+        return null; 
+      }
   return (
 
     <div className=" relative bottom-0 w-full h-96 pt-25 pb-6 bg-black flex-col justify-end items-center gap-10 inline-flex  ">

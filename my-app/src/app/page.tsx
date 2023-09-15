@@ -1,5 +1,8 @@
+import RootLayout from "./layout"
 export default function Home() {
+
   return (
+    
     <main className="">
       <div className="relative bg-bg w-full h-[274.88rem] overflow-hidden text-left text-[1rem] text-text font-title-12px-medium">
         <div className="absolute top-[83.42rem] left-[8.42rem] box-border w-[73.16rem] h-[0.03rem] opacity-[0.3] border-t-[0.5px] border-solid border-text2" />
