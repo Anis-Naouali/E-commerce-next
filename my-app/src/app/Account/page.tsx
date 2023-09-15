@@ -59,7 +59,7 @@ const mail = localStorage.getItem("mail")
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between pl-5 pr-5">
+    <main className="flex min-h-screen flex-col items-center justify-between pt-20 ">
       <div className="inline-flex gap-10">
         <div className="w-48 h-72 relative">
           <p className="left-0 top-0 absolute text-black text-base font-medium leading-normal">

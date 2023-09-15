@@ -1,6 +1,7 @@
 'use client'
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { useRouter } from 'next/navigation'
 
 
 interface data {
@@ -23,7 +24,8 @@ interface data {
 
 export default function Home() {
     const [data, setdata] = useState<data[]>([]);
-  
+    const router = useRouter();
+
   const data1 = data.slice(16,24)
     useEffect(() => {
       axios
@@ -879,9 +881,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="rounded bg-button2 flex flex-row py-[1rem] px-[3rem] items-center justify-center text-text">
-            <button className="w-60 h-14 px-12 py-4 bg-red-500 rounded justify-center items-center gap-2.5 inline-flex">
-              <div className="text-neutral-50 text-base font-medium font-['Poppins'] leading-normal">View All Products</div>
+          <div className="rounded bg-button2 flex flex-row px-[3rem] items-center justify-center text-text">
+            <button className="w-60 h-14 px-12 py-4 bg-red-500 rounded justify-center items-center gap-2.5 inline-flex" >
+              <div className="text-neutral-50 text-base font-medium font-['Poppins'] leading-normal" onClick={() => router.push('/allproducts')}>View All Products</div>
             </button>
           </div>
         </div>
