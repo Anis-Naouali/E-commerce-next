@@ -19,7 +19,8 @@ const Navbar = () => {
 
         <ul className='flex'>
 
-      <span className="self-center text-2xl ml-20 font-semibold whitespace-nowrap dark:text-black h-8 mr-20">Exclusive</span>
+      <span className="self-center text-2xl ml-20 font-semibold whitespace-nowrap dark:text-black h-8 mr-20">               <Link href='/'> Exclusive</Link> 
+</span>
   
 
             <li className='self-center mr-6 cursor-pointer'>
