@@ -1,11 +1,12 @@
 'use client'
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import Card from "../components/Card";
 interface data {
     images: {
-      id: number;
-      url: string;
-      productId: number;
+        id: number;
+        url: string;
+        productId: number;
     }[];
     id: number;
     title: string;
@@ -14,15 +15,23 @@ interface data {
     rating: number;
     price: number;
     num_reviews: number;
-  }
+}
+interface user {
+    id : number,
+    email:string,
+    name : string,
+    LastName:string
+    role : string
+    password:string,
+    addresse : string
+}
 
-  
-  
+
 
 const page = () => {
     const [data, setdata] = useState<data[]>([]);
-
-
+    const [id,setId] = useState<null | number>(null)
+    const mail = localStorage.getItem("mail")
 
     useEffect(() => {
         axios
@@ -34,6 +43,26 @@ const page = () => {
             .catch((err) => {
                 console.log(err, "err");
             });
+            const fetchUserData = async () => {
+                try {
+                  const response = await axios.get('/api/users', {
+                    params: { email: mail }, // Pass the user's email as a parameter
+                  });
+            
+                  const userData = response.data.filter((e:user)=>e.email === mail);
+                  console.log(userData,"userData");
+                  setId(userData[0].id)
+                  // if (userData.length > 0) {
+                  //   const user = userData[0];
+                  //   setUserId(user.id);
+                  // }
+                } catch (error) {
+                  console.error('An error occurred:', error);
+                }
+              };
+            
+              fetchUserData();
+
     }, []);
 
     return (
@@ -58,44 +87,10 @@ const page = () => {
             <div className=" grid grid-cols-4 gap-4 items-start justify-start gap-[1.88rem] p-20">
                 {data.map((e, i) => {
                     return (
-                        <div className="flex flex-col items-center justify-center gap-[1rem] text-text">
-                            <div className="relative rounded bg-secondary w-[16.88rem] h-[15.63rem] overflow-hidden shrink-0">
-                                <div className="absolute w-full right-[0%] bottom-[0rem] left-[0%] rounded-t-none rounded-b bg-text2 h-[2.56rem]" />
-                                <div className="absolute top-[0.94rem] left-[2.5rem] w-[11.88rem] h-[11.25rem] overflow-hidden">
-                                    <img
-                                        className="absolute top-[0.13rem] left-[0.25rem] w-[11.38rem] h-[11rem] object-cover"
-                                        alt=""
-                                        src={e.images[0].url}
-                                    />
-
-
-                                </div>
-                                <div className=" absolute top-[calc(50%_+_92px)] left-[calc(50%_-_51.5px)] w-35 flex flex-row items-center justify-start gap-[0.5rem] text-bg">
-                                    <button className="bg-black text-white font-bold  justify-center py-1 px-3 rounded">
-                                        Add to cart
-                                    </button>
-                                </div>
-                                <button>
-                                    <svg className="text-red-400 w-6 h-auto fill-current ml-60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84.02L256 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 .0003 232.4 .0003 190.9L0 190.9z" />
-                                    </svg>
-                                </button>
-
-                            </div>
-                            <div className="flex flex-col items-center justify-center gap-[0.5rem] text-[1rem] text-text2">
-                                <div className="relative leading-[1.5rem] font-medium">
-                                    {e.title}
-                                </div>
-                                <div className="flex flex-row items-center justify-center gap-[0.75rem] text-secondary-2">
-                                    <div className="relative leading-[1.5rem] font-medium">
-                                        {e.price}00$
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <Card id={id} data = {e}/>
                     );
                 })}
-     </div>
+            </div>
 
         </div>
     )

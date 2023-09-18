@@ -1,12 +1,42 @@
 'use client'
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 
+interface data {
+  images: {
+    id: number;
+    url: string;
+    productId: number;
+  }[];
+  id: number;
+  title: string;
+  description: string;
+  category: string;
+  rating: number;
+  price: number;
+  num_reviews: number;
+}
+ const Wishlist =  () => {
+  const [data, setdata] = useState<data[]>([]);
 
+  const Id = localStorage.getItem("id");
+console.log(Id, "the id is ");
+ 
+  useEffect(() => {
+    const hi =async ()=>{
+     await axios
+      .get(`http://localhost:3000/api/favs?IdUser=${Id}`)
+      .then((res) => {
+       setdata(res.data.data)
+      })
+      .catch((err) => {
+        console.log(err, "err");
+      })
+    }
+    hi()
 
-import React,{useEffect, useState} from "react";
-
-const Wishlist = () => {
-
-
+  }, []);
+  console.log(data);
 
   return (
 
@@ -21,34 +51,46 @@ const Wishlist = () => {
           </div>
           <div className="grid grid-cols-4 gap-4 items-start justify-start gap-[1.88rem] text-left text-[0.75rem] text-bg">
 
-    
-                <div className="flex flex-col items-center justify-center gap-[1rem] text-text">
-                  <div className="relative rounded bg-secondary w-[16.88rem] h-[15.63rem] overflow-hidden shrink-0">
-                    <div className="absolute w-full right-[0%] bottom-[0rem] left-[0%] rounded-t-none rounded-b bg-text2 h-[2.56rem]" />
-                    <div className="absolute top-[0.94rem] left-[2.5rem] w-[11.88rem] h-[11.25rem] overflow-hidden">
-                      <img
-                        className="absolute top-[0.13rem] left-[0.25rem] w-[11.38rem] h-[11rem] object-cover"
-                        alt=""
-                        src=""
-                      />
+
+          {data && data.map((e, i) => {
+                  return (
+                    <div className="flex flex-col items-center justify-center gap-[1rem] text-text">
+                      <div className="relative rounded bg-secondary w-[16.88rem] h-[15.63rem] overflow-hidden shrink-0">
+                        <div className="absolute w-full right-[0%] bottom-[0rem] left-[0%] rounded-t-none rounded-b bg-text2 h-[2.56rem]" />
+
+
+                        <div className="absolute top-[0.94rem] left-[2.5rem] w-[11.88rem] h-[11.25rem] overflow-hidden">
+                          <img
+                            className="absolute top-[0.13rem] left-[0.25rem] w-[11.38rem] h-[11rem] object-cover"
+                            alt=""
+                            src="{e.images[0].url}"
+                          />
+                        </div>
+                        <div className=" absolute top-[calc(50%_+_92px)] left-[calc(50%_-_51.5px)] w-35 flex flex-row items-center justify-start gap-[0.5rem] text-bg">
+                          <button className="bg-black text-white font-bold  justify-center py-1 px-3 rounded">
+                            Add to cart
+                          </button>
+                        </div>
+                      </div>
+                      <div className="flex flex-col items-center justify-center gap-[0.5rem] text-[1rem] text-text2">
+                        <div className="relative leading-[1.5rem] font-medium">
+                          {e.title}
+                        </div>
+                        <div className="flex flex-row items-center justify-center gap-[0.75rem] text-secondary-2">
+                          <div className="relative leading-[1.5rem] font-medium">
+                            {e.price}$
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div className=" absolute top-[calc(50%_+_92px)] left-[calc(50%_-_51.5px)] w-35 flex flex-row items-center justify-start gap-[0.5rem] text-bg">
-                      <button className="bg-black text-white font-bold  justify-center py-1 px-3 rounded">
-                        Add to cart
-                      </button>
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-center justify-center gap-[0.5rem] text-[1rem] text-text2">
-                    <div className="relative leading-[1.5rem] font-medium">
-                      title
-                    </div>
-                    <div className="flex flex-row items-center justify-center gap-[0.75rem] text-secondary-2">
-                      <div className="relative leading-[1.5rem] font-medium">
-$$$                      </div>
-                    </div>
-                  </div>
-                </div>
-              
+                  );
+                })}
+
+
+
+
+
+
           </div>
         </div>
 
