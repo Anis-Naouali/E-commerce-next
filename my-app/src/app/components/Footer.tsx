@@ -10,7 +10,7 @@ interface FooterProps {
       }
   return (
 
-    <div className=" relative bottom-0 w-full h-96 pt-25 pb-6 bg-black flex-col justify-end items-center gap-10 inline-flex  ">
+    <div className=" relative w-full h-96 pt-25 pb-6 bg-black flex-col justify-end items-center gap-10 inline-flex  ">
       <div className="justify-center items-start gap-20 inline-flex">
         <div className="flex-col justify-start items-start gap-4 inline-flex">
           <div className="flex-col justify-start items-start gap-6 flex">
