@@ -1,19 +1,23 @@
 'use client'
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 
 
 interface data {
-  images: { id: number; url: string; productId: number }[] & {
-    id: number,
-    title: string,
-    description: string,
-    category: string,
-    rating: number,
-    price: number,
-    num_reviews: number,
+  images: {
+    id: number;
+    url: string;
+    productId: number;
   }[];
+  id: number;
+  title: string;
+  description: string;
+  category: string;
+  rating: number;
+  price: number;
+  num_reviews: number;
 }
 
 
@@ -23,28 +27,90 @@ interface data {
 
 
 export default function Home() {
-    const [data, setdata] = useState<data[]>([]);
-    const router = useRouter();
 
-  const data1 = data.slice(16,24)
-    useEffect(() => {
-      axios
-        .get("http://localhost:3000/api/product")
-        .then((res) => {
-          setdata(res.data);
-          console.log(data);
-        })
-        .catch((err) => {
-          console.log(err, "err");
-        });
-    }, []);
-  
-    console.log(data);
+  const [gold, setGold] = useState<data[]>([])
+  const [silver, setSilver] = useState<data[]>([])
+  const [diamond, setDiamond] = useState<data[]>([])
+  const [pearl, setPearl] = useState<data[]>([])
+  const [bracelet, setBracelet] = useState<data[]>([])
+  const [rings, setRings] = useState<data[]>([])
+  const [earrings, setEarrings] = useState<data[]>([])
+  const [necklace, setNecklace] = useState<data[]>([])
 
-  
+  const buttonRef = useRef<HTMLButtonElement | null>(null);
+  const targetDivRef = useRef<HTMLDivElement | null>(null);
+  const scrollToTargetDiv = () => {
+    if (targetDivRef.current) {
+      targetDivRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  const handleButtonClick = (data: any) => {
+    setdata(data);
+    scrollToTargetDiv(); // Scroll to the target div after updating the data
+  };
+
+
+
+  const [data, setdata] = useState<data[]>([]);
+
+  const data1 = data.slice(0, 8)
+  useEffect(() => {
+    axios
+      .get("http://localhost:3000/api/product")
+      .then((res) => {
+        setdata(res.data);
+        setGold(res.data.filter((e: data) =>
+          e.category.toLowerCase().includes(("gold").toLowerCase())
+        )
+        );
+        setSilver(res.data.filter((e: data) =>
+          e.category.toLowerCase().includes(("silver").toLowerCase())
+        )
+        );
+
+        setDiamond(res.data.filter((e: data) =>
+          e.category.toLowerCase().includes(("diamond").toLowerCase())
+        )
+        );
+        setPearl(res.data.filter((e: data) =>
+          e.category.toLowerCase().includes(("pearl").toLowerCase())
+        )
+        );
+        setBracelet(res.data.filter((e: data) =>
+          e.category.toLowerCase().includes(("bracelets").toLowerCase())
+        )
+        );
+
+        setRings(res.data.filter((e: data) =>
+          e.category.toLowerCase().includes(("rings").toLowerCase())
+        )
+        );
+
+        setEarrings(res.data.filter((e: data) =>
+          e.category.toLowerCase().includes(("earrings").toLowerCase())
+        )
+        );
+
+        setNecklace(res.data.filter((e: data) =>
+          e.category.toLowerCase().includes(("necklaces").toLowerCase())
+        )
+        );
+
+
+
+
+      })
+      .catch((err) => {
+        console.log(err, "err");
+      });
+  }, []);
+
+  console.log(diamond);
+
+
 
   return (
-    
+
     <main className="">
       <div className="relative bg-bg w-full h-[274.88rem] overflow-hidden text-left text-[1rem] text-text font-title-12px-medium">
         <div className="absolute top-[83.42rem] left-[8.42rem] box-border w-[73.16rem] h-[0.03rem] opacity-[0.3] border-t-[0.5px] border-solid border-text2" />
@@ -52,11 +118,34 @@ export default function Home() {
         <div className="absolute top-[8.86rem] left-[22.98rem] box-border w-[0.03rem] h-[24.03rem] opacity-[0.3] border-r-[0.5px] border-solid border-text2" />
         <div className="absolute top-[6.38rem] left-[8.44rem] flex flex-col items-start justify-start gap-[1rem] text-center text-text2">
 
-          <div className="relative leading-[1.5rem]">Ring</div>
-          <div className="relative leading-[1.5rem]">Bracelet</div>
-          <div className="relative leading-[1.5rem]">Necklace</div>
-          <div className="relative leading-[1.5rem]">Earrings</div>
-
+          <button
+            className="relative leading-[1.5rem]"
+            onClick={() => handleButtonClick(rings)}
+            ref={buttonRef} // Assign ref to the button
+          >
+            Ring
+          </button>
+          <button
+            className="relative leading-[1.5rem]"
+            onClick={() => handleButtonClick(bracelet)}
+            ref={buttonRef} // Assign ref to the button
+          >
+            Bracelet
+          </button>
+          <button
+            className="relative leading-[1.5rem]"
+            onClick={() => handleButtonClick(necklace)}
+            ref={buttonRef} // Assign ref to the button
+          >
+            Necklaces
+          </button>
+          <button
+            className="relative leading-[1.5rem]"
+            onClick={() => handleButtonClick(earrings)}
+            ref={buttonRef} // Assign ref to the button
+          >
+            Earrings
+          </button>
         </div>
         <div className="absolute top-[2.38rem] left-[20.81rem] bg-text2 w-[60.75rem] h-[21.5rem] overflow-hidden text-center text-text">
           <img
@@ -480,8 +569,9 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-row items-start justify-start gap-[1.88rem] text-text2">
-            <div className="relative rounded box-border w-[10.63rem] h-[9.06rem] overflow-hidden shrink-0 border-[1px] border-solid border-gray-300">
-              <div className="absolute bottom-0 left-0 right-0 text-center pb-[1.5rem]">
+            <button className="relative rounded box-border w-[10.63rem] h-[9.06rem] overflow-hidden shrink-0 border-[1px] border-solid border-gray-300" onClick={() => handleButtonClick(gold)}
+              ref={buttonRef}>
+              <div className="absolute bottom-0 left-0 right-0 text-center pb-[1.5rem]" >
                 Gold
               </div>
               <img
@@ -489,8 +579,9 @@ export default function Home() {
                 alt=""
                 src="https://img.freepik.com/free-photo/yellow-wall-texture-with-scratches_1249-77.jpg?w=2000"
               />
-            </div>
-            <div className="relative rounded box-border w-[10.63rem] h-[9.06rem] overflow-hidden shrink-0 border-[1px] border-solid border-gray-300">
+            </button>
+            <button className="relative rounded box-border w-[10.63rem] h-[9.06rem] overflow-hidden shrink-0 border-[1px] border-solid border-gray-300" onClick={() => handleButtonClick(silver)}
+              ref={buttonRef}>
               <div className="absolute bottom-0 left-0 right-0 text-center pb-[1.5rem]">
                 Silver
               </div>
@@ -499,9 +590,10 @@ export default function Home() {
                 alt=""
                 src="https://d1pra95f92lrn3.cloudfront.net/media/thumb/8253_fit512.jpg"
               />
-            </div>
+            </button>
 
-            <div className="relative rounded box-border w-[10.63rem] h-[9.06rem] overflow-hidden shrink-0 border-[1px] border-solid border-gray-300">
+            <button className="relative rounded box-border w-[10.63rem] h-[9.06rem] overflow-hidden shrink-0 border-[1px] border-solid border-gray-300" onClick={() => handleButtonClick(diamond)}
+              ref={buttonRef}>
               <div className="absolute bottom-0 left-0 right-0 text-center pb-[1.5rem]">
                 Diamond
               </div>
@@ -510,9 +602,10 @@ export default function Home() {
                 alt=""
                 src="https://st.depositphotos.com/1516544/4759/i/950/depositphotos_47594879-stock-photo-diamond-on-white-background-high.jpg"
               />
-            </div>
+            </button>
 
-            <div className="relative rounded box-border w-[10.63rem] h-[9.06rem] overflow-hidden shrink-0 border-[1px] border-solid border-gray-300">
+            <button className="relative rounded box-border w-[10.63rem] h-[9.06rem] overflow-hidden shrink-0 border-[1px] border-solid border-gray-300" onClick={() => handleButtonClick(pearl)}
+              ref={buttonRef}>
               <div className="absolute bottom-0 left-0 right-0 text-center pb-[1.5rem] ">
                 Pearls
               </div>
@@ -521,7 +614,7 @@ export default function Home() {
                 alt=""
                 src="https://www.mygemologist.com/wp-content/uploads/2013/07/singile-white-round-pearl.jpg"
               />
-            </div>
+            </button>
 
           </div>
         </div>
@@ -826,14 +919,14 @@ export default function Home() {
 
 
 
-              <div className=" grid grid-cols-4 gap-4 items-start justify-start gap-[1.88rem] ">
+              <div className=" grid grid-cols-4 gap-4 items-start justify-start gap-[1.88rem]  " ref={targetDivRef}>
 
 
 
 
 
 
-              {data1.map((e, i) => {
+                {data1.map((e, i) => {
                   return (
                     <div className="flex flex-col items-center justify-center gap-[1rem] text-text">
                       <div className="relative rounded bg-secondary w-[16.88rem] h-[15.63rem] overflow-hidden shrink-0">
@@ -844,7 +937,7 @@ export default function Home() {
                           <img
                             className="absolute top-[0.13rem] left-[0.25rem] w-[11.38rem] h-[11rem] object-cover"
                             alt=""
-                            src={e.images[1].url}
+                            src={e.images[0].url}
                           />
                         </div>
                         <div className=" absolute top-[calc(50%_+_92px)] left-[calc(50%_-_51.5px)] w-35 flex flex-row items-center justify-start gap-[0.5rem] text-bg">
@@ -874,24 +967,15 @@ export default function Home() {
 
               <div className="flex flex-row items-start justify-start gap-[1.88rem]">
 
-
-
-
-
               </div>
             </div>
           </div>
           <div className="rounded bg-button2 flex flex-row px-[3rem] items-center justify-center text-text">
             <button className="w-60 h-14 px-12 py-4 bg-red-500 rounded justify-center items-center gap-2.5 inline-flex" >
-              <div className="text-neutral-50 text-base font-medium font-['Poppins'] leading-normal" onClick={() => router.push('/allproducts')}>View All Products</div>
+              <div className="text-neutral-50 text-base font-medium font-['Poppins'] leading-normal"><Link href="/allproducts">View all products</Link></div>
             </button>
           </div>
         </div>
-
-
-
-
-
 
         <div className="absolute top-[200.81rem] left-[8.44rem] flex flex-col items-start justify-start gap-[3.75rem]">
           <div className="flex flex-col items-start justify-start gap-[1.25rem]">

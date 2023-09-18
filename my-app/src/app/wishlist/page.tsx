@@ -1,10 +1,17 @@
-import React from 'react'
+'use client'
 
-const page = () => {
+
+
+import React,{useEffect, useState} from "react";
+
+const Wishlist = () => {
+
+
+
   return (
 
     <div className="relative bg-bg w-full h-[75.63rem] overflow-hidden text-left text-[0.88rem] text-text2 font-title-20px-regular">
-      <div className="absolute top-[5.88rem] left-1/2 transform -translate-x-1/2 flex flex-col items-start justify-start gap-[5rem] text-center text-[1.25rem]">
+      <div className="absolute top-[5.88rem]  left-1/2 transform -translate-x-1/2 flex flex-col items-start justify-start gap-[5rem] text-center text-[1.25rem]">
         <div className="flex flex-col items-start justify-start gap-[3.75rem]">
           <div className="flex flex-row items-center justify-start gap-[52.19rem]">
             <div className="text-center text-black text-xl font-normal leading-relaxed">Wishlist</div>
@@ -12,157 +19,36 @@ const page = () => {
               <div className="text-black text-base font-medium leading-normal">Move All To Bag</div>
             </button>
           </div>
-          <div className="flex flex-row items-start justify-start gap-[1.88rem] text-left text-[0.75rem] text-bg">
+          <div className="grid grid-cols-4 gap-4 items-start justify-start gap-[1.88rem] text-left text-[0.75rem] text-bg">
 
-
-
-
-
-            <div className="flex flex-col items-start justify-start gap-[1rem] text-text">
-              <div className="relative rounded bg-secondary w-[16.88rem] h-[15.63rem] overflow-hidden shrink-0">
-                <div className="absolute w-full right-[0%] bottom-[0rem] left-[0%] rounded-t-none rounded-b bg-text2 h-[2.56rem]" />
-                <div className="absolute top-[0.75rem] right-[0.75rem] flex flex-col items-start justify-start">
-                  <img
-                    className="relative w-[2.13rem] h-[2.13rem]"
-                    alt=""
-                    src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Icons8_flat_delete_generic.svg"
-                  />
-                </div>
-
-                <div className="absolute top-[0.94rem] left-[2.5rem] w-[11.88rem] h-[11.25rem] overflow-hidden">
-                  <img
-                    className="absolute top-[0.13rem] left-[0.25rem] w-[11.38rem] h-[11rem] object-cover"
-                    alt=""
-                    src="https://5.imimg.com/data5/ANDROID/Default/2023/6/313109136/XU/BM/HD/53794037/product-jpeg.jpg"
-                  />
-                </div>
-
-                <div className=" absolute top-[calc(50%_+_92px)] left-[calc(50%_-_51.5px)] w-35 flex flex-row items-center justify-start gap-[0.5rem] text-bg">
-
-                  <button className="bg-black text-white font-bold py-2 px-4 rounded">
-                    Add to cart
-                  </button>
-                </div>
-              </div>
-              <div className="flex flex-col items-start justify-start gap-[0.5rem] text-[1rem] text-text2">
-                <div className="relative leading-[1.5rem] font-medium">
-                  Gucci duffle bag
-                </div>
-                <div className="flex flex-row items-start justify-start gap-[0.75rem] text-secondary-2">
-                  <div className="relative leading-[1.5rem] font-medium">
-                    $960
+    
+                <div className="flex flex-col items-center justify-center gap-[1rem] text-text">
+                  <div className="relative rounded bg-secondary w-[16.88rem] h-[15.63rem] overflow-hidden shrink-0">
+                    <div className="absolute w-full right-[0%] bottom-[0rem] left-[0%] rounded-t-none rounded-b bg-text2 h-[2.56rem]" />
+                    <div className="absolute top-[0.94rem] left-[2.5rem] w-[11.88rem] h-[11.25rem] overflow-hidden">
+                      <img
+                        className="absolute top-[0.13rem] left-[0.25rem] w-[11.38rem] h-[11rem] object-cover"
+                        alt=""
+                        src=""
+                      />
+                    </div>
+                    <div className=" absolute top-[calc(50%_+_92px)] left-[calc(50%_-_51.5px)] w-35 flex flex-row items-center justify-start gap-[0.5rem] text-bg">
+                      <button className="bg-black text-white font-bold  justify-center py-1 px-3 rounded">
+                        Add to cart
+                      </button>
+                    </div>
                   </div>
-                  <div className="relative [text-decoration:line-through] leading-[1.5rem] font-medium text-text2 opacity-[0.5]">
-                    $1160
+                  <div className="flex flex-col items-center justify-center gap-[0.5rem] text-[1rem] text-text2">
+                    <div className="relative leading-[1.5rem] font-medium">
+                      title
+                    </div>
+                    <div className="flex flex-row items-center justify-center gap-[0.75rem] text-secondary-2">
+                      <div className="relative leading-[1.5rem] font-medium">
+$$$                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-
-
-
-            <div className="flex flex-col items-start justify-start gap-[1rem]">
-              <div className="relative rounded bg-secondary w-[16.88rem] h-[15.63rem] overflow-hidden shrink-0">
-                <div className="absolute w-full right-[0%] bottom-[0rem] left-[0%] rounded-t-none rounded-b bg-text2 h-[2.56rem]" />
-                <div className="absolute top-[0.75rem] right-[0.75rem] flex flex-col items-start justify-start">
-                  <img
-                    className="relative w-[2.13rem] h-[2.13rem]"
-                    alt=""
-                    src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Icons8_flat_delete_generic.svg"
-                  />
-                </div>
-                <div className="absolute top-[calc(50%_+_92px)] left-[calc(50%_-_51.5px)] flex flex-row items-center justify-start gap-[0.5rem]">
-                  <button className="bg-black text-white font-bold py-2 px-4 rounded">
-                    Add to cart
-                  </button>
-                </div>
-                <div className="absolute top-[calc(50%_-_107px)] left-[calc(50%_-_95px)] w-[11.88rem] h-[11.25rem] overflow-hidden">
-                  <img
-                    className="absolute top-[0.13rem] left-[0.25rem] w-[11.38rem] h-[11rem] object-cover"
-                    alt=""
-                    src="https://www.kushals.com/cdn/shop/files/silver-necklace-ruby-oxidised-silver-92-5-silver-necklace-150239-36070006849692.jpg?v=1683335618"
-                  />
-                </div>
-              </div>
-              <div className="flex flex-col items-start justify-start gap-[0.5rem] text-[1rem] text-text2">
-                <div className="relative leading-[1.5rem] font-medium">
-                  RGB liquid CPU Cooler
-                </div>
-                <div className="flex flex-row items-start justify-start text-secondary-2">
-                  <div className="relative leading-[1.5rem] font-medium">
-                    $1960
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col items-start justify-start gap-[1rem]">
-              <div className="relative rounded bg-secondary w-[16.88rem] h-[15.63rem] overflow-hidden shrink-0">
-                <div className="absolute w-full right-[0%] bottom-[0rem] left-[0%] rounded-t-none rounded-b bg-text2 h-[2.56rem]" />
-                <div className="absolute top-[0.75rem] right-[0.75rem] flex flex-col items-start justify-start">
-                  <img
-                    className="relative w-[2.13rem] h-[2.13rem]"
-                    alt=""
-                    src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Icons8_flat_delete_generic.svg"
-                  />
-                </div>
-                <div className="absolute top-[calc(50%_+_92px)] left-[calc(50%_-_51.5px)] flex flex-row items-center justify-start gap-[0.5rem]">
-
-                  <button className="bg-black text-white font-bold py-2 px-4 rounded">
-                    Add to cart
-                  </button>                </div>
-                <div className="absolute top-[calc(50%_-_103px)] left-[calc(50%_-_95px)] w-[11.88rem] h-[11.25rem] overflow-hidden">
-                  <img
-                    className="absolute top-[0.13rem] left-[0.25rem] w-[11.38rem] h-[11rem] object-cover"
-                    alt=""
-                    src="https://blingvine.com/cdn/shop/products/niyara-pearl-earrings-earrings-blingvine-960499_750x.jpg?v=1636531890"
-                  />
-                </div>
-              </div>
-              <div className="flex flex-col items-start justify-start gap-[0.5rem] text-[1rem] text-text2">
-                <div className="relative leading-[1.5rem] font-medium">
-                  GP11 Shooter USB Gamepad
-                </div>
-                <div className="flex flex-row items-start justify-start text-secondary-2">
-                  <div className="relative leading-[1.5rem] font-medium">
-                    $550
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col items-start justify-start gap-[1rem]">
-              <div className="relative rounded bg-secondary w-[16.88rem] h-[15.63rem] overflow-hidden shrink-0">
-                <div className="absolute w-full right-[0%] bottom-[0rem] left-[0%] rounded-t-none rounded-b bg-text2 h-[2.56rem]" />
-                <div className="absolute top-[0.75rem] right-[0.75rem] flex flex-col items-start justify-start">
-                  <img
-                    className="relative w-[2.13rem] h-[2.13rem]"
-                    alt=""
-                    src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Icons8_flat_delete_generic.svg"
-                  />
-                </div>
-                <div className="absolute top-[calc(50%_+_92px)] left-[calc(50%_-_51.5px)] flex flex-row items-center justify-start gap-[0.5rem] ">
-                  <button className="bg-black text-white font-bold py-2 px-4 rounded">
-                    Add to cart
-                  </button>
-                </div>
-                <div className="absolute top-[calc(50%_-_103px)] left-[calc(50%_-_95px)] w-[11.88rem] h-[11.25rem] overflow-hidden">
-                  <img
-                    className="absolute top-[0.13rem] left-[0.25rem] w-[11.38rem] h-[11rem] object-cover"
-                    alt=""
-                    src="https://www.wanderlustandco.com/cdn/shop/products/Wanderlustandco_Moments_MultiBezel14KGoldVermeilBraceletandPaveLinkChain14KGoldVermeilTennisBraceletandClassicBaguette14KGoldVermeilBangleandClassicandClassicBold14KGoldVermeilBangle_d42ae21a-e2a8-4766-b608-b6f2d22f204e_800x.jpg?v=1666767086"
-                  />
-                </div>
-              </div>
-              <div className="flex flex-col items-start justify-start gap-[0.5rem] text-[1rem] text-text2">
-                <div className="relative leading-[1.5rem] font-medium">
-                  Quilted Satin Jacket
-                </div>
-                <div className="flex flex-row items-start justify-start text-secondary-2">
-                  <div className="relative leading-[1.5rem] font-medium">
-                    $750
-                  </div>
-                </div>
-              </div>
-            </div>
+              
           </div>
         </div>
 
@@ -193,7 +79,7 @@ const page = () => {
 
 
 
-        <div className="flex flex-col items-start justify-start gap-[3.75rem]">
+        <div className="relativeflex flex-col items-start justify-start gap-[3.75rem]">
           <div className="flex flex-row items-center justify-start gap-[54rem]">
             <div className="flex flex-row items-center justify-start gap-[1rem]">
               <div className="w-5 h-10 relative">
@@ -466,4 +352,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Wishlist
