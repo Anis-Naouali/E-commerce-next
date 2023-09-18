@@ -53,7 +53,6 @@ export const POST = async (req: NextRequest) => {
           { status: 401 }
         );
       }
-
       createdProducts.push(product);
     }
 

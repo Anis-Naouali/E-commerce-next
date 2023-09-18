@@ -1,7 +1,9 @@
 'use client'
 import React, { useState, useEffect, ChangeEvent } from "react";
 import axios from "axios";
-import { useRouter } from 'next/router';
+import { useRouter } from "next/navigation";
+import RootLayout from '@/app/layout';
+
 
 interface Image {
   id: number;
@@ -9,7 +11,7 @@ interface Image {
   productId: number;
 }
 
-interface data {
+interface Data {
   id: number;
   title: string;
   description: string;
@@ -21,22 +23,55 @@ interface data {
 }
 
 interface Props {
-  product: data;
+  productId: number;
 }
-
-const UpdateProduct: React.FC<Props> = ({ product }) => {
+ 
+const UpdateProduct: React.FC<Props> = ({ productId }) => {
   const router = useRouter();
-  const [updatedProduct, setUpdatedProduct] = useState({ ...product });
+  const [prodId, setId] = useState<number | null>(null);
+  const [updatedProduct, setUpdatedProduct] = useState<Data>({
+    id: 0,
+    title: "",
+    description: "",
+    category: "",
+    rating: 0,
+    price: 0,
+    num_reviews: 0,
+    images: [],
+  });
   const [imageFile, setImageFile] = useState<File | null>(null);
   const [productImages, setProductImages] = useState<Image[]>([]);
-  const productId = product.id;
+console.log(updatedProduct,"updateed")
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const productid = Number(params.get("ID"));
+    console.log("Extracted productid:", productid);
+    setId(productid);
+
+    if (!isNaN(productid)) {
+      axios
+        .get(`http://localhost:3000/api/prod?ID=${productid}`)
+        .then((response) => {
+          console.log(response.data, "data");
+          if (response.status === 200) {
+            const { images } = response.data;
+            setUpdatedProduct(response.data);
+            setProductImages(images);
+          }
+        })
+        .catch((error) => console.error(error));
+    }
+  }, []);
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    setUpdatedProduct({
-      ...updatedProduct,
-      [name]: value,
-    });
+    if (updatedProduct) {
+      const { name, value } = e.target;
+      const numericValue = ["price", "rating"].includes(name) ? parseFloat(value) : value;
+      setUpdatedProduct((prevProduct) => ({
+        ...prevProduct,
+        [name]: numericValue,
+      }));
+    }
   };
 
   const handleImageUpload = (e: ChangeEvent<HTMLInputElement>) => {
@@ -47,43 +82,47 @@ const UpdateProduct: React.FC<Props> = ({ product }) => {
   };
 
   const handleSubmit = async () => {
-    if (imageFile) {
-      const cloudinaryResponse = await uploadImageToCloudinary(imageFile);
+    if (updatedProduct) {
+      try {
+        let updatedData = { ...updatedProduct };
 
-      if (cloudinaryResponse) {
-        updatedProduct.images[0].url = cloudinaryResponse.secure_url;
+        if (imageFile) {
+          const cloudinaryResponse = await uploadImageToCloudinary(imageFile);
+
+          if (cloudinaryResponse) {
+            updatedData = {
+              ...updatedData,
+              images: [
+                {
+                  id: updatedProduct.images[0].id,
+                  url: cloudinaryResponse.secure_url,
+                  productId: productId,
+                },
+              ],
+            };
+          }
+        }
+
+        await axios.put(
+          `http://localhost:3000/api/product?ID=${prodId}`,
+          updatedData
+        );
+
+        router.push("/admin/products");
+      } catch (error) {
+        console.error(error);
       }
     }
-
-    axios
-      .put(`http://localhost:3000/api/product?ID=${productId}`, updatedProduct)
-      .then((response) => {
-        if (response.status === 200) {
-          router.push("/productList");
-        }
-      })
-      .catch((error) => console.error(error));
   };
-
-  useEffect(() => {
-    axios
-      .get(`http://localhost:3000/api/product/images?productID=${productId}`)
-      .then((response) => {
-        if (response.status === 200) {
-          setProductImages(response.data);
-        }
-      })
-      .catch((error) => console.error(error));
-  }, [productId]);
 
   const uploadImageToCloudinary = async (imageFile: File) => {
     try {
       const formData = new FormData();
       formData.append("file", imageFile);
-      formData.append("upload_preset", "mohamed");
+      formData.append("upload_preset", "eh4mtnwx");
 
       const response = await axios.post(
-        "https://api.cloudinary.com/v1_1/dpc6syi3z/image/upload",
+        `https://api.cloudinary.com/v1_1/dpc6syi3z/image/upload`,
         formData
       );
 
@@ -93,62 +132,92 @@ const UpdateProduct: React.FC<Props> = ({ product }) => {
       return null;
     }
   };
+console.log(typeof(updatedProduct.price));
 
   return (
+    <RootLayout role="admin" >
+
     <div>
-      <h2>Edit Product</h2>
-      <form>
-        <div>
-          <label>Name:</label>
-          <input
-            type="text"
-            name="title"
-            value={updatedProduct.title}
-            onChange={handleInputChange}
-          />
-        </div>
-        <div>
-          <label>Description:</label>
-          <input
-            type="text"
-            name="description"
-            value={updatedProduct.description}
-            onChange={handleInputChange}
-          />
-        </div>
-        <div>
-          <label>Price:</label>
-          <input
-            type="number"
-            name="price"
-            value={updatedProduct.price}
-            onChange={handleInputChange}
-          />
-        </div>
-        <div>
-          <label>Image:</label>
-          <input
-            type="file"
-            accept="image/*"
-            onChange={handleImageUpload}
-          />
-        </div>
-        <button type="button" onClick={handleSubmit}>
-          Update
-        </button>
-      </form>
-      <h2>Product Images</h2>
-      <div>
-        {productImages.map((image, index) => (
-          <img
-            key={index}
-            src={image.url}
-            alt={`Product Image ${index + 1}`}
-            style={{ width: "100px", height: "100px", marginRight: "10px" }}
-          />
-        ))}
-      </div>
+      {updatedProduct !== null && (
+        <>
+          <h2 className="text-xl font-semibold mb-4">Edit Product</h2>
+          <form className="space-y-4">
+            <div className="flex flex-col">
+              <label className="text-sm font-semibold" htmlFor="title">Name:</label>
+              <input
+                type="text"
+                name="title"
+                value={updatedProduct.title || ""}
+                onChange={handleInputChange}
+                className="border rounded px-2 py-1"
+              />
+            </div>
+            <div className="flex flex-col">
+              <label className="text-sm font-semibold" htmlFor="description">Description:</label>
+              <input
+                type="text"
+                name="description"
+                value={updatedProduct.description || ""}
+                onChange={handleInputChange}
+                className="border rounded px-2 py-1"
+              />
+            </div>
+            <div className="flex flex-col">
+                <label className="text-sm font-semibold" htmlFor="price">
+                  Price:
+                </label>
+                <input
+                  type="number"
+                  name="price"
+                  value={updatedProduct.price}
+                  onChange={handleInputChange}
+                  className="border rounded px-2 py-1"
+                />
+              </div>
+              <div className="flex flex-col">
+                <label className="text-sm font-semibold" htmlFor="rating">
+                  Rating:
+                </label>
+                <input
+                  type="number"
+                  name="rating"
+                  value={updatedProduct.rating}
+                  onChange={handleInputChange}
+                  className="border rounded px-2 py-1"
+                />
+              </div>
+            <div className="flex flex-col">
+              <label className="text-sm font-semibold" htmlFor="image">Image:</label>
+              <input
+                type="file"
+                accept="image/*"
+                onChange={handleImageUpload}
+                className="border rounded px-2 py-1"
+              />
+            </div>
+            <button
+              type="button"
+              onClick={handleSubmit}
+              className="bg-blue-500 text-white rounded px-4 py-2 hover:bg-blue-600"
+            >
+              Update
+            </button>
+          </form>
+          <h2 className="text-xl font-semibold mt-6">Product Images</h2>
+          <div className="flex">
+            {productImages.map((image, index) => (
+              <img
+                key={index}
+                src={image.url}
+                alt={`Product Image ${index + 1}`}
+                className="w-20 h-20 rounded mr-4"
+              />
+            ))}
+          </div>
+        </>
+      )}
     </div>
+    </RootLayout>
   );
 };
 

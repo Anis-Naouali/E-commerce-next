@@ -21,7 +21,7 @@ const ProfilNavBar: React.FC = () => {
       const response = await axios.post(
         "http://localhost:3000/api/logout");
       if (response.data.message) {
-        
+        localStorage.clear()
           window.location.href = "/";
         }
       }

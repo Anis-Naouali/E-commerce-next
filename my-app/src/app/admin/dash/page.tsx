@@ -82,6 +82,9 @@ const AdminDashboard = () => {
             <li className="mb-2">
               <Link href="/admin/products" className="text-white">Products</Link>
             </li>
+            <li className="mb-2">
+              <Link href="/admin/addProduct" className="text-white">Add Products</Link>
+            </li>
           </ul>
         </div>
         
