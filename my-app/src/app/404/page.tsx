@@ -1,4 +1,4 @@
-
+import Footer from "../components/Footer";
 const page = () => {
     return (
         <div className="relative bg-primary w-full h-[39.88rem] overflow-hidden text-left text-[0.88rem] text-text2 font-title-12px-medium">
@@ -24,6 +24,7 @@ const page = () => {
 
 
         </div>
+        
     );
 };
 

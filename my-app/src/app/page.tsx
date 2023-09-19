@@ -105,7 +105,8 @@ export default function Home() {
       });
   }, []);
 
-  console.log(diamond);
+ console.log(data1,"data");
+ 
 
 
 
@@ -927,6 +928,8 @@ export default function Home() {
 
 
                 {data1.map((e, i) => {
+                  console.log(e);
+                  
                   return (
                     <div className="flex flex-col items-center justify-center gap-[1rem] text-text">
                       <div className="relative rounded bg-secondary w-[16.88rem] h-[15.63rem] overflow-hidden shrink-0">

@@ -1,112 +1,122 @@
 [
   {
     "title": "Pendant in Yellow Gold with Diamonds Medium",
-    "description": " This pendant features a striking oval link chain that echoes the Lock motif. It’s expertly crafted in 18k yellow gold with hand-set diamonds.",
+    "description":
+      " This pendant features a striking oval link chain that echoes the Lock motif. It’s expertly crafted in 18k yellow gold with hand-set diamonds.",
     "category": "gold necklaces ",
     "rating": 4,
-    "price":6500,
-    "num_reviews":10,
+    "price": 6500,
+    "num_reviews": 10,
     "images": [
       {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-lockpendant-72791304_1060358_ED.jpg?&op_usm=1.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
+        "url": "https://eragem.com/media/catalog/product/cache/1/image/17f82f742ffe127f42dca9de82fb58b1/9/3/93577a.jpg"
       },
       {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-lockpendant-72791304_1060184_SV_1.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&fmt=webp"
-        },
-        {
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-lockpendant-72791304_1060180_AV_1.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&fmt=webp"
-          },{
-            "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-lockpendant-72791304_1060182_AV_4.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&fmt=webp"
-            }
-  ],
+        "url": "https://eragem.com/media/catalog/product/cache/1/image/17f82f742ffe127f42dca9de82fb58b1/9/3/93577a.jpg"
+      },
+      {
+        "url": "https://eragem.com/media/catalog/product/cache/1/image/17f82f742ffe127f42dca9de82fb58b1/9/3/93577a.jpg"
+      },
+      {
+        "url": "https://eragem.com/media/catalog/product/cache/1/image/17f82f742ffe127f42dca9de82fb58b1/9/3/93577a.jpg"
+      },
+    ],
     "user_id": 15
   },
   {
     "title": "Graduated Link Necklace",
-    "description": " A bold, graduated chain of gauge links captures the urban edge of the city, making a stunning statement.",
+    "description":
+      " A bold, graduated chain of gauge links captures the urban edge of the city, making a stunning statement.",
     "category": "gold necklaces ",
     "rating": 5,
-    "price":1500 ,
-    "num_reviews":13,
+    "price": 1500,
+    "num_reviews": 13,
     "images": [
       {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardweargraduated-link-necklace-38086766_1025207_ED.jpg?&op_usm=1.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
+        "url": "https://ebth-com-production.imgix.net/2023/07/27/13/34/07/9527392b-83e2-460e-ab91-e67a80e708c1/1690478845538-2c866719953ce231649583e05d9e6a5eefbb8321f9afc282aacc29ffc8e816dc.JPG?ixlib=rb-3.1.0&w=880&h=880&fit=crop&crop=&auto=format"
       },
       {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardweargraduated-link-necklace-38086766_1013527_SV_1.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },
-        {
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardweargraduated-link-necklace-38086766_1025208_AV_1.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          },{
-            "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardweargraduated-link-necklace-38086766_1040704_AV_3.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          }
-  ],
+        "url": "https://ebth-com-production.imgix.net/2023/07/27/13/34/07/9527392b-83e2-460e-ab91-e67a80e708c1/1690478845538-2c866719953ce231649583e05d9e6a5eefbb8321f9afc282aacc29ffc8e816dc.JPG?ixlib=rb-3.1.0&w=880&h=880&fit=crop&crop=&auto=format"
+      },
+      {
+        "url": "https://ebth-com-production.imgix.net/2023/07/27/13/34/07/9527392b-83e2-460e-ab91-e67a80e708c1/1690478845538-2c866719953ce231649583e05d9e6a5eefbb8321f9afc282aacc29ffc8e816dc.JPG?ixlib=rb-3.1.0&w=880&h=880&fit=crop&crop=&auto=format"
+      },
+      {
+        "url": "https://ebth-com-production.imgix.net/2023/07/27/13/34/07/9527392b-83e2-460e-ab91-e67a80e708c1/1690478845538-2c866719953ce231649583e05d9e6a5eefbb8321f9afc282aacc29ffc8e816dc.JPG?ixlib=rb-3.1.0&w=880&h=880&fit=crop&crop=&auto=format"
+      }
+    ],
     "user_id": 15
   },
   {
     "title": "Vine Convertible Drop Earrings",
-    "description": " They’re crafted of 18k gold with a contrast of high polish and sandblasted finishes. Round brilliant and marquise diamonds play off the light and accentuate the vine motif. ",
+    "description":
+      " They’re crafted of 18k gold with a contrast of high polish and sandblasted finishes. Round brilliant and marquise diamonds play off the light and accentuate the vine motif. ",
     "category": "gold earrings ",
     "rating": 5,
-    "price":9000 ,
-    "num_reviews":15,
+    "price": 9000,
+    "num_reviews": 15,
     "images": [
       {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriavine-convertible-drop-earrings-69523579_1026643_ED.jpg?&op_usm=2.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
+        "url": "https://di2ponv0v5otw.cloudfront.net/posts/2023/01/27/63d42ee6a66374ffdcf87ad7/m_63d42ee6a66374ffdcf87ad8.jpg"
       },
       {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriavine-convertible-drop-earrings-69523579_1035310_AV_1.jpg?&op_usm=2.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },
-        {
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriavine-convertible-drop-earrings-69523579_1026642_AV_3.jpg?&op_usm=2.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          },{
-            "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriavine-convertible-drop-earrings-69523579_1026645_SV_2.jpg?&op_usm=2.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        }
-  ],
+        "url": "https://di2ponv0v5otw.cloudfront.net/posts/2023/01/27/63d42ee6a66374ffdcf87ad7/m_63d42ee6a66374ffdcf87ad8.jpg"
+      },
+      {
+        "url": "https://di2ponv0v5otw.cloudfront.net/posts/2023/01/27/63d42ee6a66374ffdcf87ad7/m_63d42ee6a66374ffdcf87ad8.jpg"
+      },
+      {
+        "url": "https://di2ponv0v5otw.cloudfront.net/posts/2023/01/27/63d42ee6a66374ffdcf87ad7/m_63d42ee6a66374ffdcf87ad8.jpg"
+      },
+    ],
     "user_id": 15
   },
   {
     "title": "Flame Ear Clips",
-    "description": " Jean Schlumberger’s visionary creations are among the world’s most intricate designs. Scintillating round brilliant diamonds set in platinum and striking strands of 18k yellow gold form these flame ear clips. ",
+    "description":
+      " Jean Schlumberger’s visionary creations are among the world’s most intricate designs. Scintillating round brilliant diamonds set in platinum and striking strands of 18k yellow gold form these flame ear clips. ",
     "category": "gold earrings ",
     "rating": 5,
-    "price":2000 ,
-    "num_reviews":15,
+    "price": 2000,
+    "num_reviews": 15,
     "images": [
       {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-co-schlumbergerflame-ear-clips-13465819_1020229_ED.jpg?&op_usm=2.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
+        "url": "https://cdn11.bigcommerce.com/s-a60me21/images/stencil/1280x1280/products/4433/63705/350-163-801-c__41531.1507831542.jpg?c=2"
       },
       {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-co-schlumbergerflame-ear-clips-13465819_1020230_SV_1.jpg?&op_usm=2.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },
-        {
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-co-schlumbergerflame-ear-clips-13465819_1020226_AV_1.jpg?&op_usm=2.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          },{
-            "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-co-schlumbergerflame-ear-clips-13465819_1020227_AV_2.jpg?&op_usm=2.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        }
-  ],
+        "url": "https://cdn11.bigcommerce.com/s-a60me21/images/stencil/1280x1280/products/4433/63705/350-163-801-c__41531.1507831542.jpg?c=2"
+      },
+      {
+        "url": "https://cdn11.bigcommerce.com/s-a60me21/images/stencil/1280x1280/products/4433/63705/350-163-801-c__41531.1507831542.jpg?c=2"
+      },
+      {
+        "url": "https://cdn11.bigcommerce.com/s-a60me21/images/stencil/1280x1280/products/4433/63705/350-163-801-c__41531.1507831542.jpg?c=2"
+      },
+    ],
     "user_id": 15
   },
   {
     "title": "Croisillon Azure Blue Enamel Bracelet",
-    "description": " Schlumberger’s magnificent enamel bracelets are beautifully accented with gold and gemstones.",
+    "description":
+      " Schlumberger’s magnificent enamel bracelets are beautifully accented with gold and gemstones.",
     "category": "gold bracelets ",
     "rating": 5,
-    "price":5000 ,
-    "num_reviews":18,
+    "price": 5000,
+    "num_reviews": 18,
     "images": [
       {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-co-schlumbergercroisillon-azure-blue-enamel-bracelet-69728367_1032176_ED.jpg?&op_usm=1.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
+        "url": "https://i.ebayimg.com/images/g/K-IAAOSwiONYK9ys/s-l1200.jpg"
       },
       {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-co-schlumbergercroisillon-azure-blue-enamel-bracelet-69728367_1032178_SV_1.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },
-        {
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-co-schlumbergercroisillon-azure-blue-enamel-bracelet-69728367_1032174_AV_1.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          },{
-            "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-co-schlumbergercroisillon-azure-blue-enamel-bracelet-69728367_1032177_AV_3.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        }
-  ],
+        "url": "https://i.ebayimg.com/images/g/K-IAAOSwiONYK9ys/s-l1200.jpg"
+      },
+      {
+        "url": "https://i.ebayimg.com/images/g/K-IAAOSwiONYK9ys/s-l1200.jpg"
+      },
+      {
+        "url": "https://i.ebayimg.com/images/g/K-IAAOSwiONYK9ys/s-l1200.jpg"
+      },
+    ],
     "user_id": 15
   },
   {
@@ -114,21 +124,22 @@
     "description": " A balance of clean lines and showstopping diamonds",
     "category": "gold bracelets ",
     "rating": 5,
-    "price":7000 ,
-    "num_reviews":40,
+    "price": 7000,
+    "num_reviews": 40,
     "images": [
       {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-edgemulti-row-bypass-bracelet-70920026_1050896_AV_1_M.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
+        "url": "https://m.media-amazon.com/images/I/81yzvkuFvYL._AC_UY300_.jpg"
       },
       {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-edgemulti-row-bypass-bracelet-70920026_1050380_AV_2_M.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },
-        {
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-edgemulti-row-bypass-bracelet-70920026_1050382_AV_4_M.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          },{
-            "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-edgemulti-row-bypass-bracelet-70920026_1050381_AV_3_M.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-         }
-  ],
+        "url": "https://m.media-amazon.com/images/I/81yzvkuFvYL._AC_UY300_.jpg"
+      },
+      {
+        "url": "https://m.media-amazon.com/images/I/81yzvkuFvYL._AC_UY300_.jpg"
+      },
+      {
+        "url": "https://m.media-amazon.com/images/I/81yzvkuFvYL._AC_UY300_.jpg"
+      },
+    ],
     "user_id": 15
   },
   {
@@ -136,21 +147,22 @@
     "description": "Brilliant diamonds illuminate this delicate ring.",
     "category": "gold ring ",
     "rating": 5,
-    "price":6200 ,
-    "num_reviews":20,
+    "price": 6200,
+    "num_reviews": 20,
     "images": [
       {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-co-schlumbergerrope-two-row-ring-25963288_1044072_ED_M.jpg?&op_usm=1.75,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
+        "url": "https://theantiqueparlour.com/cdn/shop/products/R0895-5_1400x.jpg?v=1626809088"
       },
       {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-co-schlumbergerrope-two-row-ring-25963288_1026965_SV_1_M.jpg?&op_usm=1.75,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },
-        {
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-co-schlumbergerrope-two-row-ring-25963288_1044073_SV_2_M.jpg?&op_usm=1.75,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          },{
-            "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-co-schlumbergerrope-two-row-ring-25963288_1044071_AV_1_M.jpg?&op_usm=1.75,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-         }
-  ],
+        "url": "https://theantiqueparlour.com/cdn/shop/products/R0895-5_1400x.jpg?v=1626809088"
+      },
+      {
+        "url": "https://theantiqueparlour.com/cdn/shop/products/R0895-5_1400x.jpg?v=1626809088"
+      },
+      {
+        "url": "https://theantiqueparlour.com/cdn/shop/products/R0895-5_1400x.jpg?v=1626809088"
+      },
+    ],
     "user_id": 15
   },
   {
@@ -158,109 +170,118 @@
     "description": "Brilliant diamonds and tsavorites alternate with X's,",
     "category": "gold ring ",
     "rating": 5,
-    "price":9950 ,
-    "num_reviews":25,
+    "price": 9950,
+    "num_reviews": 25,
     "images": [
       {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-co-schlumbergersixteen-stone-ring-23539047_1045699_ED_M.jpg?&op_usm=1.75,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
+        "url": "https://media2.cgtrader.com/variants/Kpskpp8pNN8gBa34wsecFKFd/64d1262c1acde2eb3beef249c4695a8ad88c958dd79db36f763bf631017addd0/1.jpg"
       },
       {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-co-schlumbergersixteen-stone-ring-23539047_1045700_SV_1_M.jpg?&op_usm=1.75,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },
-        {
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-co-schlumbergersixteen-stone-ring-23539047_1045698_AV_1_M.jpg?&op_usm=1.75,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          },{
-            "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-co-schlumbergersixteen-stone-ring-23539047_1045698_AV_1_M.jpg?&op_usm=1.75,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-         }
-  ],
+        "url": "https://media2.cgtrader.com/variants/Kpskpp8pNN8gBa34wsecFKFd/64d1262c1acde2eb3beef249c4695a8ad88c958dd79db36f763bf631017addd0/1.jpg"
+      },
+      {
+        "url": "https://media2.cgtrader.com/variants/Kpskpp8pNN8gBa34wsecFKFd/64d1262c1acde2eb3beef249c4695a8ad88c958dd79db36f763bf631017addd0/1.jpg"
+      },
+      {
+        "url": "https://media2.cgtrader.com/variants/Kpskpp8pNN8gBa34wsecFKFd/64d1262c1acde2eb3beef249c4695a8ad88c958dd79db36f763bf631017addd0/1.jpg"
+      },
+    ],
     "user_id": 15
   },
   {
     "title": "Pendan",
-    "description": "The elegant simplicity of this pendant makes it as appropriate for day as it is for evening.",
+    "description":
+      "The elegant simplicity of this pendant makes it as appropriate for day as it is for evening.",
     "category": "diamond necklaces ",
     "rating": 5,
-    "price":1850 ,
-    "num_reviews":4,
+    "price": 1850,
+    "num_reviews": 4,
     "images": [
       {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriapendant-14743715_997899_ED.jpg?&op_usm=1.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
+        "url": "https://blingvine.com/cdn/shop/products/immara-pendant-set-necklace-sets-blingvine-171353_750x.jpg?v=1641280812"
       },
       {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriapendant-14743715_1031332_SV_1.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },
-        {
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriapendant-14743715_993508_AV_1_M.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          },{
-            "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriapendant-14743715_993509_AV_2.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          }
-  ],
+        "url": "https://blingvine.com/cdn/shop/products/immara-pendant-set-necklace-sets-blingvine-171353_750x.jpg?v=1641280812"
+      },
+      {
+        "url": "https://blingvine.com/cdn/shop/products/immara-pendant-set-necklace-sets-blingvine-171353_750x.jpg?v=1641280812"
+      },
+      {
+        "url": "https://blingvine.com/cdn/shop/products/immara-pendant-set-necklace-sets-blingvine-171353_750x.jpg?v=1641280812"
+      },
+    ],
     "user_id": 15
   },
   {
     "title": "Diamond Vine Circle Pendant in Platinum",
-    "description": " Mixed-cut diamonds add dimension to the fluid fronds of this striking pendant.",
+    "description":
+      " Mixed-cut diamonds add dimension to the fluid fronds of this striking pendant.",
     "category": "diamond necklaces",
     "rating": 5,
-    "price":1500 ,
-    "num_reviews":33,
+    "price": 1500,
+    "num_reviews": 33,
     "images": [
       {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriadiamond-vine-circle-pendant-in-platinum-63919152_1006797_ED.jpg?&op_usm=1.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
+        "url": "https://i.pinimg.com/originals/e6/cd/5d/e6cd5d027bd95f9c656ce373c5e53953.jpg"
       },
       {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriadiamond-vine-circle-pendant-in-platinum-63919152_1006766_SV_1.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },
-        {
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriadiamond-vine-circle-pendant-in-platinum-63919152_1006763_AV_1.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          },{
-            "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriadiamond-vine-circle-pendant-in-platinum-63919152_1006764_AV_2.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-         }
-  ],
+        "url": "https://i.pinimg.com/originals/e6/cd/5d/e6cd5d027bd95f9c656ce373c5e53953.jpg"
+      },
+      {
+        "url": "https://i.pinimg.com/originals/e6/cd/5d/e6cd5d027bd95f9c656ce373c5e53953.jpg"
+      },
+      {
+        "url": "https://i.pinimg.com/originals/e6/cd/5d/e6cd5d027bd95f9c656ce373c5e53953.jpg"
+      },
+    ],
     "user_id": 15
   },
   {
     "title": "Alternating Ring ",
-    "description": "The feminine arrangement of this ring is the embodiment of subtle glamour.",
+    "description":
+      "The feminine arrangement of this ring is the embodiment of subtle glamour.",
     "category": "diamond rings ",
     "rating": 5,
-    "price":2700 ,
-    "num_reviews":25,
+    "price": 2700,
+    "num_reviews": 25,
     "images": [
       {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriaalternating-ring-25537483_991734_ED.jpg?&op_usm=1.75,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
+        "url": "https://eragem.com/media/catalog/product/cache/1/image/17f82f742ffe127f42dca9de82fb58b1/9/5/95508a.jpg"
       },
       {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriaalternating-ring-25537483_1029627_SV_1.jpg?&op_usm=1.75,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },
-        {
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriaalternating-ring-25537483_991730_AV_1.jpg?&op_usm=1.75,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          },{
-            "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriaalternating-ring-25537483_991732_AV_2.jpg?&op_usm=1.75,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-           }
-  ],
+        "url": "https://eragem.com/media/catalog/product/cache/1/image/17f82f742ffe127f42dca9de82fb58b1/9/5/95508a.jpg"
+      },
+      {
+        "url": "https://eragem.com/media/catalog/product/cache/1/image/17f82f742ffe127f42dca9de82fb58b1/9/5/95508a.jpg"
+      },
+      {
+        "url": "https://eragem.com/media/catalog/product/cache/1/image/17f82f742ffe127f42dca9de82fb58b1/9/5/95508a.jpg"
+      },
+    ],
     "user_id": 15
   },
   {
     "title": "Vine Ring",
-    "description": "This ring features a round aquamarine at its center and an organic vine motif of marquise diamonds.",
+    "description":
+      "This ring features a round aquamarine at its center and an organic vine motif of marquise diamonds.",
     "category": "diamond rings ",
     "rating": 5,
-    "price":1000 ,
-    "num_reviews":2,
+    "price": 1000,
+    "num_reviews": 2,
     "images": [
       {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriavine-ring-68268109_1025695_ED_M.jpg?&op_usm=1.75,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
+        "url": "https://images.squarespace-cdn.com/content/v1/56d5b946b654f96f883028b3/1642625227383-7H8KQXW2LT1J4BEXFADV/IMG_7973.jpg?format=1500w"
       },
       {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriavine-ring-68268109_1025696_SV_1_M.jpg?&op_usm=1.75,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },
-        {
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriavine-ring-68268109_1025693_AV_1_M.jpg?&op_usm=1.75,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          },{
-            "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriavine-ring-68268109_1025694_AV_2_M.jpg?&op_usm=1.75,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-         }
-  ],
+        "url": "https://images.squarespace-cdn.com/content/v1/56d5b946b654f96f883028b3/1642625227383-7H8KQXW2LT1J4BEXFADV/IMG_7973.jpg?format=1500w"
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/56d5b946b654f96f883028b3/1642625227383-7H8KQXW2LT1J4BEXFADV/IMG_7973.jpg?format=1500w"
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/56d5b946b654f96f883028b3/1642625227383-7H8KQXW2LT1J4BEXFADV/IMG_7973.jpg?format=1500w"
+      },
+    ],
     "user_id": 15
   },
   {
@@ -268,21 +289,22 @@
     "description": "In 18k white gold with round brilliant diamonds.",
     "category": "diamond bracelets ",
     "rating": 5,
-    "price":1000 ,
-    "num_reviews":42,
+    "price": 1000,
+    "num_reviews": 42,
     "images": [
       {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/paloma-picassoolive-leaf-narrow-cuff-34941033_1028097_ED_M.jpg?&op_usm=1.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
+        "url": "https://i.ebayimg.com/images/g/TtkAAOSw6D9iovsj/s-l1600.jpg"
       },
       {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/paloma-picassoolive-leaf-narrow-cuff-34941033_1028098_SV_1_M.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },
-        {
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/paloma-picassoolive-leaf-narrow-cuff-34941033_1028095_AV_1_M.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          },{
-            "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/paloma-picassoolive-leaf-narrow-cuff-34941033_1028096_AV_2_M.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-         }
-  ],
+        "url": "https://i.ebayimg.com/images/g/TtkAAOSw6D9iovsj/s-l1600.jpg"
+      },
+      {
+        "url": "https://i.ebayimg.com/images/g/TtkAAOSw6D9iovsj/s-l1600.jpg"
+      },
+      {
+        "url": "https://i.ebayimg.com/images/g/TtkAAOSw6D9iovsj/s-l1600.jpg"
+      },
+    ],
     "user_id": 15
   },
   {
@@ -290,279 +312,215 @@
     "description": " A balance of clean lines and showstopping diamonds",
     "category": "diamond bracelets ",
     "rating": 5,
-    "price":2000 ,
-    "num_reviews":33,
+    "price": 2000,
+    "num_reviews": 33,
     "images": [
       {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriatennis-bracelet-38051148_1013535_ED.jpg?&op_usm=1.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
+        "url": "https://www.knightsthejewellers.co.nz/wp-content/uploads/2022/11/4047_sku_023-01993_0.jpg"
       },
       {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriatennis-bracelet-38051148_1008123_SV_1.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },
-        {
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriatennis-bracelet-38051148_1013536_AV_1.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          },{
-            "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriatennis-bracelet-38051148_1008121_AV_2.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-         }
-  ],
+        "url": "https://www.knightsthejewellers.co.nz/wp-content/uploads/2022/11/4047_sku_023-01993_0.jpg"
+      },
+      {
+        "url": "https://www.knightsthejewellers.co.nz/wp-content/uploads/2022/11/4047_sku_023-01993_0.jpg"
+      },
+      {
+        "url": "https://www.knightsthejewellers.co.nz/wp-content/uploads/2022/11/4047_sku_023-01993_0.jpg"
+      },
+    ],
     "user_id": 15
   },
   {
     "title": "Diamonds by the Yard® Earrings",
-    "description": "A modern take on classic diamond studs, the simple design of these earrings takes center stage with hand-polished bezel-set diamonds.",
+    "description":
+      "A modern take on classic diamond studs, the simple design of these earrings takes center stage with hand-polished bezel-set diamonds.",
     "category": "diamond earrings ",
     "rating": 5,
-    "price":1200 ,
-    "num_reviews":20,
+    "price": 1200,
+    "num_reviews": 20,
     "images": [
       {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/elsa-perettidiamonds-by-the-yard-earrings-12818653_1023039_ED_M.jpg?&op_usm=2.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
+        "url": "https://i.ebayimg.com/images/g/wPoAAOSwavBj3D3a/s-l1200.jpg"
       },
       {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/elsa-perettidiamonds-by-the-yard-earrings-12818653_1020917_SV_1.jpg?&op_usm=2.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },
-        {
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/elsa-perettidiamonds-by-the-yard-earrings-12818653_1016072_AV_2_M.jpg?&op_usm=2.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          },{
-            "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/elsa-perettidiamonds-by-the-yard-earrings-12818653_1016073_AV_3_M.jpg?&op_usm=2.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          }
-  ],
+        "url": "https://i.ebayimg.com/images/g/wPoAAOSwavBj3D3a/s-l1200.jpg"
+      },
+      {
+        "url": "https://i.ebayimg.com/images/g/wPoAAOSwavBj3D3a/s-l1200.jpg"
+      },
+      {
+        "url": "https://i.ebayimg.com/images/g/wPoAAOSwavBj3D3a/s-l1200.jpg"
+      },
+    ],
     "user_id": 15
   },
   {
     "title": "T1 Hoop Earrings",
-    "description": "white gold and feature a beveled edge traced with round brilliant diamonds.",
+    "description":
+      "white gold and feature a beveled edge traced with round brilliant diamonds.",
     "category": "diamond earrings ",
     "rating": 5,
-    "price":5550 ,
-    "num_reviews":25,
+    "price": 5550,
+    "num_reviews": 25,
     "images": [
       {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-tt1-hoop-earrings-69783058_1057323_ED.jpg?&op_usm=2.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
+        "url": "https://eragem.com/media/catalog/product/cache/1/image/17f82f742ffe127f42dca9de82fb58b1/9/1/91052a.jpeg"
       },
       {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-tt1-hoop-earrings-69783058_1057324_SV_1.jpg?&op_usm=2.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },
-        {
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-tt1-hoop-earrings-69783058_1057321_AV_1.jpg?&op_usm=2.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          },{
-            "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-tt1-hoop-earrings-69783058_1057322_AV_2.jpg?&op_usm=2.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-         }
-  ],
+        "url": "https://eragem.com/media/catalog/product/cache/1/image/17f82f742ffe127f42dca9de82fb58b1/9/1/91052a.jpeg"
+      },
+      {
+        "url": "https://eragem.com/media/catalog/product/cache/1/image/17f82f742ffe127f42dca9de82fb58b1/9/1/91052a.jpeg"
+      },
+      {
+        "url": "https://eragem.com/media/catalog/product/cache/1/image/17f82f742ffe127f42dca9de82fb58b1/9/1/91052a.jpeg"
+      },
+    ],
     "user_id": 15
-  },   
-  
+  },
+
   {
     "title": "Pendan",
-    "description": "The elegant simplicity of this pendant makes it as appropriate for day as it is for evening.",
+    "description":
+      "The elegant simplicity of this pendant makes it as appropriate for day as it is for evening.",
     "category": "diamond necklaces ",
     "rating": 5,
-    "price":1850 ,
-    "num_reviews":2,
+    "price": 1850,
+    "num_reviews": 2,
     "images": [
       {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriapendant-14743715_997899_ED.jpg?&op_usm=1.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
+        "url": "https://navrathan.com/wp-content/uploads/2021/12/Dazzling-Diamond-pendan-Christmas-accessories.png"
       },
       {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriapendant-14743715_1031332_SV_1.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },
-        {
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriapendant-14743715_993508_AV_1_M.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          },{
-            "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriapendant-14743715_993509_AV_2.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          }
-  ],
+        "url": "https://navrathan.com/wp-content/uploads/2021/12/Dazzling-Diamond-pendan-Christmas-accessories.png"
+      },
+      {
+        "url": "https://navrathan.com/wp-content/uploads/2021/12/Dazzling-Diamond-pendan-Christmas-accessories.png"
+      },
+      {
+        "url": "https://navrathan.com/wp-content/uploads/2021/12/Dazzling-Diamond-pendan-Christmas-accessories.png"
+      },
+    ],
     "user_id": 15
   },
   {
     "title": "Diamond Vine Circle Pendant in Platinum",
-    "description": " Mixed-cut diamonds add dimension to the fluid fronds of this striking pendant.",
+    "description":
+      " Mixed-cut diamonds add dimension to the fluid fronds of this striking pendant.",
     "category": "diamond necklaces",
     "rating": 5,
-    "price":1500 ,
-    "num_reviews":33,
+    "price": 1500,
+    "num_reviews": 33,
     "images": [
       {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriadiamond-vine-circle-pendant-in-platinum-63919152_1006797_ED.jpg?&op_usm=1.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
+        "url": "https://m.media-amazon.com/images/I/71mgS2VA-JL._AC_SL1500_.jpg"
       },
       {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriadiamond-vine-circle-pendant-in-platinum-63919152_1006766_SV_1.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },
-        {
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriadiamond-vine-circle-pendant-in-platinum-63919152_1006763_AV_1.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          },{
-            "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriadiamond-vine-circle-pendant-in-platinum-63919152_1006764_AV_2.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          }
-  ],
+        "url": "https://m.media-amazon.com/images/I/71mgS2VA-JL._AC_SL1500_.jpg"
+      },
+      {
+        "url": "https://m.media-amazon.com/images/I/71mgS2VA-JL._AC_SL1500_.jpg"
+      },
+      {
+        "url": "https://m.media-amazon.com/images/I/71mgS2VA-JL._AC_SL1500_.jpg"
+      },
+    ],
     "user_id": 15
   },
   {
-    "title": "Alternating Ring ",
-    "description": "The feminine arrangement of this ring is the embodiment of subtle glamour.",
+    "title": "Bridal Diamond Jewellery ",
+    "description":
+      "The feminine arrangement of this ring is the embodiment of subtle glamour.",
     "category": "diamond rings ",
     "rating": 5,
-    "price":2700 ,
-    "num_reviews":25,
+    "price": 2700,
+    "num_reviews": 25,
     "images": [
       {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriaalternating-ring-25537483_991734_ED.jpg?&op_usm=1.75,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
+        "url": "https://gkchudiwalas.com/wp-content/uploads/2019/12/Diamond-necklace.jpg"
       },
       {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriaalternating-ring-25537483_1029627_SV_1.jpg?&op_usm=1.75,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },
-        {
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriaalternating-ring-25537483_991730_AV_1.jpg?&op_usm=1.75,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          },{
-            "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriaalternating-ring-25537483_991732_AV_2.jpg?&op_usm=1.75,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          }
-  ],
+        "url": "https://gkchudiwalas.com/wp-content/uploads/2019/12/Diamond-necklace.jpg"
+      },
+      {
+        "url": "https://gkchudiwalas.com/wp-content/uploads/2019/12/Diamond-necklace.jpg"
+      },
+      {
+        "url": "https://gkchudiwalas.com/wp-content/uploads/2019/12/Diamond-necklace.jpg"
+      },
+    ],
     "user_id": 15
   },
   {
-    "title": "Vine Ring",
-    "description": "This ring features a round aquamarine at its center and an organic vine motif of marquise diamonds.",
-    "category": "diamond rings ",
-    "rating": 5,
-    "price":1000 ,
-    "num_reviews":25,
-    "images": [
-      {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriavine-ring-68268109_1025695_ED_M.jpg?&op_usm=1.75,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-      },
-      {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriavine-ring-68268109_1025696_SV_1_M.jpg?&op_usm=1.75,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },
-        {
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriavine-ring-68268109_1025693_AV_1_M.jpg?&op_usm=1.75,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          },{
-            "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriavine-ring-68268109_1025694_AV_2_M.jpg?&op_usm=1.75,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          }
-  ],
-    "user_id": 15
-  },
-  {
-    "title": "Olive Leaf Narrow Cuff",
+    "title": "Shubh Muhurat Jewellery Collection",
     "description": "In 18k white gold with round brilliant diamonds.",
     "category": "diamond bracelets ",
     "rating": 5,
-    "price":1000 ,
-    "num_reviews":4,
+    "price": 1000,
+    "num_reviews": 4,
     "images": [
       {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/paloma-picassoolive-leaf-narrow-cuff-34941033_1028097_ED_M.jpg?&op_usm=1.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
+        "url": "https://images.naptol.com/usr/local/csp/staticContent/product_images/horizontal/750x750/Shubh-Muhurat-Jewellery-Collection-01.jpg"
       },
       {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/paloma-picassoolive-leaf-narrow-cuff-34941033_1028098_SV_1_M.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },
-        {
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/paloma-picassoolive-leaf-narrow-cuff-34941033_1028095_AV_1_M.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          },{
-            "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/paloma-picassoolive-leaf-narrow-cuff-34941033_1028096_AV_2_M.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-         }
-  ],
+        "url": "https://images.naptol.com/usr/local/csp/staticContent/product_images/horizontal/750x750/Shubh-Muhurat-Jewellery-Collection-01.jpg"
+      },
+      {
+        "url": "https://images.naptol.com/usr/local/csp/staticContent/product_images/horizontal/750x750/Shubh-Muhurat-Jewellery-Collection-01.jpg"
+      },
+      {
+        "url": "https://images.naptol.com/usr/local/csp/staticContent/product_images/horizontal/750x750/Shubh-Muhurat-Jewellery-Collection-01.jpg"
+      },
+    ],
     "user_id": 15
   },
-  {
-    "title": "Tennis Bracelet ",
-    "description": " A balance of clean lines and showstopping diamonds",
-    "category": "diamond bracelets ",
-    "rating": 5,
-    "price":2000 ,
-    "num_reviews":33,
-    "images": [
-      {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriatennis-bracelet-38051148_1013535_ED.jpg?&op_usm=1.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-      },
-      {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriatennis-bracelet-38051148_1008123_SV_1.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },
-        {
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriatennis-bracelet-38051148_1013536_AV_1.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          },{
-            "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriatennis-bracelet-38051148_1008121_AV_2.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-         }
-  ],
-    "user_id": 15
-  },
-  {
-    "title": "Diamonds by the Yard® Earrings",
-    "description": "A modern take on classic diamond studs, the simple design of these earrings takes center stage with hand-polished bezel-set diamonds.",
-    "category": "diamond earrings ",
-    "rating": 5,
-    "price":1200 ,
-    "num_reviews":20,
-    "images": [
-      {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/elsa-perettidiamonds-by-the-yard-earrings-12818653_1023039_ED_M.jpg?&op_usm=2.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-      },
-      {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/elsa-perettidiamonds-by-the-yard-earrings-12818653_1020917_SV_1.jpg?&op_usm=2.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },
-        {
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/elsa-perettidiamonds-by-the-yard-earrings-12818653_1016072_AV_2_M.jpg?&op_usm=2.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          },{
-            "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/elsa-perettidiamonds-by-the-yard-earrings-12818653_1016073_AV_3_M.jpg?&op_usm=2.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-         }
-  ],
-    "user_id": 15
-  },
-  {
-    "title": "T1 Hoop Earrings",
-    "description": "white gold and feature a beveled edge traced with round brilliant diamonds.",
-    "category": "diamond earrings ",
-    "rating": 5,
-    "price":5550 ,
-    "num_reviews":25,
-    "images": [
-      {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-tt1-hoop-earrings-69783058_1057323_ED.jpg?&op_usm=2.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-      },
-      {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-tt1-hoop-earrings-69783058_1057324_SV_1.jpg?&op_usm=2.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },
-        {
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-tt1-hoop-earrings-69783058_1057321_AV_1.jpg?&op_usm=2.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          },{
-            "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-tt1-hoop-earrings-69783058_1057322_AV_2.jpg?&op_usm=2.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        }
-  ],
-    "user_id": 15
-  }, 
-  
+
   {
     "title": "Open Heart Pendant",
-    "description": "The simple, evocative shape of Elsa Peretti Open Heart designs celebrates the spirit of love.",
+    "description":
+      "The simple, evocative shape of Elsa Peretti Open Heart designs celebrates the spirit of love.",
     "category": "silver necklaces ",
     "rating": 5,
-    "price":1850 ,
-    "num_reviews":4,
+    "price": 1850,
+    "num_reviews": 4,
     "images": [
       {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/elsa-perettiopen-heart-pendant-24806057_1032198_ED.jpg?&op_usm=1.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
+        "url": "https://www.samanthadulay.com/cdn/shop/files/DBDC805E-AB64-4645-907F-3AB15AFD9501.jpg?v=1692659835"
       },
       {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/elsa-perettiopen-heart-pendant-24806057_1022662_SV_1.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },
-        {
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/elsa-perettiopen-heart-pendant-24806057_1022659_AV_1.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          },{
-            "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/elsa-perettiopen-heart-pendant-24806057_1022660_AV_2.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-         }
-  ],
+        "url": "https://www.samanthadulay.com/cdn/shop/files/DBDC805E-AB64-4645-907F-3AB15AFD9501.jpg?v=1692659835"
+      },
+      {
+        "url": "https://www.samanthadulay.com/cdn/shop/files/DBDC805E-AB64-4645-907F-3AB15AFD9501.jpg?v=1692659835"
+      },
+      {
+        "url": "https://www.samanthadulay.com/cdn/shop/files/DBDC805E-AB64-4645-907F-3AB15AFD9501.jpg?v=1692659835"
+      },
+    ],
     "user_id": 15
   },
   {
     "title": "Diamond Vine Circle Pendant in Platinum",
-    "description": " Mixed-cut diamonds add dimension to the fluid fronds of this striking pendant.",
+    "description":
+      " Mixed-cut diamonds add dimension to the fluid fronds of this striking pendant.",
     "category": "silver necklaces",
     "rating": 5,
-    "price":1900 ,
-    "num_reviews":33,
+    "price": 1900,
+    "num_reviews": 33,
     "images": [
       {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/elsa-perettiscorpion-pendant-21879932_1034731_ED.jpg?&op_usm=1.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-            }
-  ],
+        "url": "https://blingvine.com/cdn/shop/products/alina-pendant-set-platinum-necklace-sets-blingvine-686536_768x768.jpg?v=1636527535"
+      },
+      {
+        "url": "https://blingvine.com/cdn/shop/products/alina-pendant-set-platinum-necklace-sets-blingvine-686536_768x768.jpg?v=1636527535"
+      },
+      {
+        "url": "https://blingvine.com/cdn/shop/products/alina-pendant-set-platinum-necklace-sets-blingvine-686536_768x768.jpg?v=1636527535"
+      },
+      {
+        "url": "https://blingvine.com/cdn/shop/products/alina-pendant-set-platinum-necklace-sets-blingvine-686536_768x768.jpg?v=1636527535"
+      },
+    ],
     "user_id": 15
   },
   {
@@ -570,13 +528,22 @@
     "description": "An aquamarine shines at the center of this five-row ring.",
     "category": "silver rings ",
     "rating": 5,
-    "price":90 ,
-    "num_reviews":25,
+    "price": 90,
+    "num_reviews": 25,
     "images": [
       {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/elsa-perettiwave-five-row-ring-60408394_971058_ED_M.jpg?&op_usm=1.75,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-           }
-  ],
+        "url": "https://ebth-com-production.imgix.net/2020/05/06/13/44/24/631cc356-e2cf-479f-b90c-503af3e0353d/1588786902079-39bed3555019052f41fca6aa5ae0d8e08762dcf26c5d347c3ecd54265286a135.JPG?ixlib=rb-3.1.0&w=880&h=880&fit=crop&crop=&auto=format"
+      },
+      {
+        "url": "https://ebth-com-production.imgix.net/2020/05/06/13/44/24/631cc356-e2cf-479f-b90c-503af3e0353d/1588786902079-39bed3555019052f41fca6aa5ae0d8e08762dcf26c5d347c3ecd54265286a135.JPG?ixlib=rb-3.1.0&w=880&h=880&fit=crop&crop=&auto=format"
+      },
+      {
+        "url": "https://ebth-com-production.imgix.net/2020/05/06/13/44/24/631cc356-e2cf-479f-b90c-503af3e0353d/1588786902079-39bed3555019052f41fca6aa5ae0d8e08762dcf26c5d347c3ecd54265286a135.JPG?ixlib=rb-3.1.0&w=880&h=880&fit=crop&crop=&auto=format"
+      },
+      {
+        "url": "https://ebth-com-production.imgix.net/2020/05/06/13/44/24/631cc356-e2cf-479f-b90c-503af3e0353d/1588786902079-39bed3555019052f41fca6aa5ae0d8e08762dcf26c5d347c3ecd54265286a135.JPG?ixlib=rb-3.1.0&w=880&h=880&fit=crop&crop=&auto=format"
+      },
+    ],
     "user_id": 15
   },
   {
@@ -584,85 +551,94 @@
     "description": "A beautifully humble form, the bean’s simple shape,",
     "category": "silver rings ",
     "rating": 5,
-    "price":65 ,
-    "num_reviews":25,
+    "price": 65,
+    "num_reviews": 25,
     "images": [
       {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/elsa-perettibean-design-continuous-ring-68799554_1041508_ED_M.jpg?&op_usm=1.75,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
+        "url": "https://forever-moissanite.com/wp-content/uploads/2022/12/Custom-design-for-Emily-V6-by-Forever-Moissanite-3.jpeg"
       },
       {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/elsa-perettibean-design-continuous-ring-68799554_1041540_SV_1_M.jpg?&op_usm=1.75,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },
-        {
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/elsa-perettibean-design-continuous-ring-68799554_1041507_AV_1_M.jpg?&op_usm=1.75,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          }
-  ],
+        "url": "https://forever-moissanite.com/wp-content/uploads/2022/12/Custom-design-for-Emily-V6-by-Forever-Moissanite-3.jpeg"
+      },
+      {
+        "url": "https://forever-moissanite.com/wp-content/uploads/2022/12/Custom-design-for-Emily-V6-by-Forever-Moissanite-3.jpeg"
+      },
+      {
+        "url": "https://forever-moissanite.com/wp-content/uploads/2022/12/Custom-design-for-Emily-V6-by-Forever-Moissanite-3.jpeg"
+      },
+    ],
     "user_id": 15
   },
   {
     "title": "Small Wrap Bracelet",
-    "description": "A bold chain of gauge links captures the urban edge of the city, making a stunning statement.",
+    "description":
+      "A bold chain of gauge links captures the urban edge of the city, making a stunning statement.",
     "category": "silver bracelets ",
     "rating": 5,
-    "price":2000 ,
-    "num_reviews":4,
+    "price": 2000,
+    "num_reviews": 4,
     "images": [
       {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardwearsmall-wrap-bracelet-60450579_1028883_SV_1.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC0_stABF1J8g3pz7xAf182zb9_fncZ9Jb0Q&usqp=CAU"
       },
       {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardwearsmall-wrap-bracelet-60450579_1028883_SV_1.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },
-        {
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardwearsmall-wrap-bracelet-60450579_1028882_AV_1.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          },{
-            "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardwearsmall-wrap-bracelet-60450579_1028879_AV_2.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-           }
-  ],
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC0_stABF1J8g3pz7xAf182zb9_fncZ9Jb0Q&usqp=CAU"
+      },
+      {
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC0_stABF1J8g3pz7xAf182zb9_fncZ9Jb0Q&usqp=CAU"
+      },
+      {
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC0_stABF1J8g3pz7xAf182zb9_fncZ9Jb0Q&usqp=CAU"
+      },
+    ],
     "user_id": 15
   },
   {
     "title": "Heart Tag Bracelet",
-    "description": " This sterling silver link bracelet features the iconic heart tag set with a round brilliant diamond and an oversized toggle closure.",
+    "description":
+      " This sterling silver link bracelet features the iconic heart tag set with a round brilliant diamond and an oversized toggle closure.",
     "category": "silver bracelets ",
     "rating": 5,
-    "price":85 ,
-    "num_reviews":33,
+    "price": 85,
+    "num_reviews": 33,
     "images": [
       {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/return-to-tiffanyheart-tag-bracelet-70923572_1045473_ED_M.jpg?&op_usm=1.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
+        "url": "https://wildersconsignment.com/cdn/shop/files/IMG_3102.heic?v=1692225562&width=1946"
       },
       {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/return-to-tiffanyheart-tag-bracelet-70923572_1045475_SV_1_M.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },
-        {
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/return-to-tiffanyheart-tag-bracelet-70923572_1045476_AV_3_M.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          },{
-            "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/return-to-tiffanyheart-tag-bracelet-70923572_1045474_AV_2_M.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-           }
-  ],
+        "url": "https://wildersconsignment.com/cdn/shop/files/IMG_3102.heic?v=1692225562&width=1946"
+      },
+      {
+        "url": "https://wildersconsignment.com/cdn/shop/files/IMG_3102.heic?v=1692225562&width=1946"
+      },
+      {
+        "url": "https://wildersconsignment.com/cdn/shop/files/IMG_3102.heic?v=1692225562&width=1946"
+      },
+    ],
     "user_id": 15
   },
   {
     "title": "Triple Drop Earrings",
-    "description": "these earrings are perfectly balanced and cradled by a fine chain.",
+    "description":
+      "these earrings are perfectly balanced and cradled by a fine chain.",
     "category": "silver earrings ",
     "rating": 5,
-    "price":1200 ,
-    "num_reviews":20,
+    "price": 1200,
+    "num_reviews": 20,
     "images": [
       {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardweartriple-drop-earrings-38096761_973444_AV_1_M.jpg?&op_usm=2.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
+        "url": "https://magpiejewellery.com/cdn/shop/products/DSC_7140.jpg?v=1646239552"
       },
       {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardweartriple-drop-earrings-38096761_1015677_AV_2.jpg?&op_usm=2.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },
-        {
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardweartriple-drop-earrings-13199477_1017521_AV_4_M.jpg?&op_usm=2.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          },{
-            "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardweartriple-drop-earrings-38096761_1015678_AV_3.jpg?&op_usm=2.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-         }
-  ],
+        "url": "https://magpiejewellery.com/cdn/shop/products/DSC_7140.jpg?v=1646239552"
+      },
+      {
+        "url": "https://magpiejewellery.com/cdn/shop/products/DSC_7140.jpg?v=1646239552"
+      },
+      {
+        "url": "https://magpiejewellery.com/cdn/shop/products/DSC_7140.jpg?v=1646239552"
+      },
+    ],
     "user_id": 15
   },
   {
@@ -670,176 +646,215 @@
     "description": "Original designs copyrighted by Elsa Peretti",
     "category": "silver earrings ",
     "rating": 5,
-    "price":60 ,
-    "num_reviews":25,
+    "price": 60,
+    "num_reviews": 25,
     "images": [
       {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/elsa-perettiteardrop-earrings-15838809_1055233_ED.jpg?&op_usm=2.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
+        "url": "https://thesilveralchemist.com.au/cdn/shop/products/red-coral-teardrop-earrings-307887.jpg?v=1675821628&width=1946"
       },
       {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/elsa-perettiteardrop-earrings-15838809_1002068_SV_1.jpg?&op_usm=2.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },
-        {
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/elsa-perettiteardrop-earrings-15838809_1055232_AV_1.jpg?&op_usm=2.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        }
-  ],
-    "user_id": 15
-  },  
-  
-{
-  "title": "Tiffany Signature® Pearls",
-  "description": "Pendant in 18k white gold with an Akoya cultured pearl and a round brilliant diamond",
-  "category": "pearl necklaces ",
-  "rating": 5,
-  "price":90 ,
-  "num_reviews":4,
-  "images": [
-    {
-    "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-signature-pearlspendant-23100525_907527_ED_M.jpg?&op_usm=1.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-    },
-    {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-signature-pearlspendant-23100576_934581_SV_1_M.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-         }
-  ],
-    "user_id": 15
-  },
-{
-  "title": "Link Necklace",
-  "description": "Tiffany HardWear is inspired by the attitude and energy of New York City",
-  "category": "pearl necklaces",
-  "rating": 5,
-  "price":3800 ,
-  "num_reviews":33,
-  "images": [
-    {
-    "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardwearlink-necklace-70606119_1035956_ED.jpg?&op_usm=1.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-    },
-    {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardwearlink-necklace-70606119_1035954_AV_1.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
+        "url": "https://thesilveralchemist.com.au/cdn/shop/products/red-coral-teardrop-earrings-307887.jpg?v=1675821628&width=1946"
       },
       {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardwearlink-necklace-70606119_1035955_AV_2.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-         }
-  ],
-    "user_id": 15
-  },
-{
-  "title": "South Sea White Pearl Ring in 18k Gold",
-  "description": "This double band ring design combines warm 18k gold and a lustrous pearl that can be worn for both day and night.",
-  "category": "pearl rings ",
-  "rating": 5,
-  "price":2175,
-  "num_reviews":25,
-  "images": [
-    {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardwearsouth-sea-white-pearl-ring-in-18k-gold-66959031_1008928_ED_M.jpg?&op_usm=1.75,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-      },{
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardwearsouth-sea-white-pearl-ring-in-18k-gold-66959031_1008929_SV_1_M.jpg?&op_usm=1.75,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },{
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardwearsouth-sea-white-pearl-ring-in-18k-gold-66959031_1008930_AV_1_M.jpg?&op_usm=1.75,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        }
-  ],
-    "user_id": 15
-  },
-{
-  "title": "Double Pearl Ring in Sterling Silver",
-  "description": "Double Pearl Ring in Sterling Silver",
-  "category": "pearl rings ",
-  "rating": 5,
-  "price":70 ,
-  "num_reviews":25,
-  "images": [
-    {
-    "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardweardouble-pearl-ring-in-sterling-silver-64048600_1004058_ED_M.jpg?&op_usm=1.75,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-    },
-    {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardweardouble-pearl-ring-in-sterling-silver-64048600_1004061_SV_1_M.jpg?&op_usm=1.75,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
+        "url": "https://thesilveralchemist.com.au/cdn/shop/products/red-coral-teardrop-earrings-307887.jpg?v=1675821628&width=1946"
       },
       {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardweardouble-pearl-ring-in-sterling-silver-64048600_1004059_AV_1_M.jpg?&op_usm=1.75,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-         }
-  ],
+        "url": "https://thesilveralchemist.com.au/cdn/shop/products/red-coral-teardrop-earrings-307887.jpg?v=1675821628&width=1946"
+      },
+    ],
     "user_id": 15
   },
-{
-  "title": "Pearl Bracelet",
-  "description": "The unexpected pairing of bold links and refined pearls define this sterling silver bracelet. ",
-  "category": "pearl bracelets ",
-  "rating": 5,
-  "price":2000 ,
-  "num_reviews":4,
-  "images": [
-    {
-    "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardwearpearl-bracelet-67063767_1003936_ED.jpg?&op_usm=1.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-    },
-    {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardwearpearl-bracelet-67063767_1003939_SV_1.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
+
+  {
+    "title": "Tiffany Signature® Pearls",
+    "description":
+      "Pendant in 18k white gold with an Akoya cultured pearl and a round brilliant diamond",
+    "category": "pearl necklaces ",
+    "rating": 5,
+    "price": 90,
+    "num_reviews": 4,
+    "images": [
+      {
+        "url": "https://www.fnp.com/images/pr/l/v20220623184643/sri-jagdamba-pearls-drop-necklace-set_2.jpg"
       },
       {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardwearpearl-bracelet-67063767_1003937_AV_1.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },{
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardwearpearl-bracelet-67063767_1003938_AV_2.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        }
-  ],
+        "url": "https://www.fnp.com/images/pr/l/v20220623184643/sri-jagdamba-pearls-drop-necklace-set_2.jpg"
+      },
+      {
+        "url": "https://www.fnp.com/images/pr/l/v20220623184643/sri-jagdamba-pearls-drop-necklace-set_2.jpg"
+      },
+      {
+        "url": "https://www.fnp.com/images/pr/l/v20220623184643/sri-jagdamba-pearls-drop-necklace-set_2.jpg"
+      },
+    ],
     "user_id": 15
   },
-{
-  "title": "Bracelet",
-  "description": " Bracelet of Akoya cultured pearls with an 18k white gold clasp. 7.5 long",
-  "category": "pearl bracelets ",
-  "rating": 5,
-  "price":1350,
-  "num_reviews":33,
-  "images": [
-    {
-    "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-essential-pearlsbracelet-30347986_1045971_ED_M.jpg?&op_usm=1.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-    },
-    {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-essential-pearlsbracelet-30347986_1045973_SV_1_M.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
+  {
+    "title": "Link Necklace",
+    "description":
+      "Tiffany HardWear is inspired by the attitude and energy of New York City",
+    "category": "pearl necklaces",
+    "rating": 5,
+    "price": 3800,
+    "num_reviews": 33,
+    "images": [
+      {
+        "url": "https://www.revekarose.com/cdn/shop/products/sterling-silver-and-pearl-link-necklace.jpg?v=1655470117    "
       },
       {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-essential-pearlsbracelet-30347986_1045972_AV_1_M.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },{
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-essential-pearlsbracelet-30347986_1045970_AV_2_M.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-          }
-  ],
-    "user_id": 15
-  },{
-  "title": "Pearl and Diamond Earrings",
-  "description": "Tiffany Victoria uses a unique combination of cuts for a distinctly romantic sensibility.",
-  "category": "pearl earrings ",
-  "rating": 5,
-  "price":1200 ,
-  "num_reviews":20,
-  "images": [
-    {
-    "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriapearl-and-diamond-earrings-31177162_991745_ED.jpg?&op_usm=2.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-    },
-    {
-      "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriapearl-and-diamond-earrings-31177162_1027826_SV_1.jpg?&op_usm=2.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
+        "url": "https://www.revekarose.com/cdn/shop/products/sterling-silver-and-pearl-link-necklace.jpg?v=1655470117    "
       },
       {
-        "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriapearl-and-diamond-earrings-31177162_991742_AV_1.jpg?&op_usm=2.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        },{
-          "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriapearl-and-diamond-earrings-31177162_991743_AV_2.jpg?&op_usm=2.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        }
-  ],
+        "url": "https://www.revekarose.com/cdn/shop/products/sterling-silver-and-pearl-link-necklace.jpg?v=1655470117    "
+      },
+      {
+        "url": "https://www.revekarose.com/cdn/shop/products/sterling-silver-and-pearl-link-necklace.jpg?v=1655470117    "
+      },
+    ],
     "user_id": 15
   },
-{
- 
-  "title": "Pearls by the Yard™ Chain Earrings",
-  "description": "Floating on a delicate chain, pearls are sleek treasures harboring luminescence in their round profiles.",
-  "category": "pearl earrings ",
-  "rating": 5,
-  "price":8550 ,
-  "num_reviews":25,
-  "images": [
-    {
-    "url":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/elsa-perettipearls-by-the-yard-chain-earrings-22681486_870389_ED_M.jpg?&op_usm=2.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp"
-        }
-  ],
+  {
+    "title":
+      "A classic watch store offering a wide range of stylish timepieces for every taste and budget.",
+    "description":
+      "This double band ring design combines warm 18k gold and a lustrous pearl that can be worn for both day and night.",
+    "category": "pearl rings ",
+    "rating": 5,
+    "price": 2175,
+    "num_reviews": 25,
+    "images": [
+      {
+        "url": "https://cdn.drouot.com/d/image/lot?size=fullHD&path=2232/142227/4abd56e71ba074b7f364608d022e045b      "
+      },
+      {
+        "url": "https://cdn.drouot.com/d/image/lot?size=fullHD&path=2232/142227/4abd56e71ba074b7f364608d022e045b      "
+      },
+      {
+        "url": "https://cdn.drouot.com/d/image/lot?size=fullHD&path=2232/142227/4abd56e71ba074b7f364608d022e045b      "
+      },
+      {
+        "url": "https://cdn.drouot.com/d/image/lot?size=fullHD&path=2232/142227/4abd56e71ba074b7f364608d022e045b      "
+      },
+    ],
     "user_id": 15
-  }
-  
-]
+  },
+  {
+    "title": "Double Pearl Ring in Sterling Silver",
+    "description": "Double Pearl Ring in Sterling Silver",
+    "category": "pearl rings ",
+    "rating": 5,
+    "price": 70,
+    "num_reviews": 25,
+    "images": [
+      {
+        "url": "https://www.findurings.com/cdn/shop/files/3_56.jpg?v=1685080621"
+      },
+      {
+        "url": "https://www.findurings.com/cdn/shop/files/3_56.jpg?v=1685080621"
+      },
+      {
+        "url": "https://www.findurings.com/cdn/shop/files/3_56.jpg?v=1685080621"
+      },
+      {
+        "url": "https://www.findurings.com/cdn/shop/files/3_56.jpg?v=1685080621"
+      },
+    ],
+    "user_id": 15
+  },
+  {
+    "title": "Elegant Pearl Bracelet",
+    "description":
+      "The unexpected pairing of bold links and refined pearls define this sterling silver bracelet. ",
+    "category": "pearl bracelets ",
+    "rating": 5,
+    "price": 2000,
+    "num_reviews": 4,
+    "images": [
+      {
+        "url": "https://modipearls.com/wp-content/uploads/2020/06/z-3-min.jpg"
+      },
+      {
+        "url": "https://modipearls.com/wp-content/uploads/2020/06/z-3-min.jpg"
+      },
+      {
+        "url": "https://modipearls.com/wp-content/uploads/2020/06/z-3-min.jpg"
+      },
+      {
+        "url": "https://modipearls.com/wp-content/uploads/2020/06/z-3-min.jpg"
+      },
+    ],
+    "user_id": 15
+  },
+  {
+    "title": "Real Pearl Bracelet",
+    "description":
+      " Bracelet of Akoya cultured pearls with an 18k white gold clasp. 7.5 long",
+    "category": "pearl bracelets ",
+    "rating": 5,
+    "price": 1350,
+    "num_reviews": 33,
+    "images": [
+      {
+        "url": "https://modipearls.com/wp-content/uploads/2021/05/best-place-to-buy-pearls-online-original.jpg"
+      },
+      {
+        "url": "https://modipearls.com/wp-content/uploads/2021/05/best-place-to-buy-pearls-online-original.jpg"
+      },
+      {
+        "url": "https://modipearls.com/wp-content/uploads/2021/05/best-place-to-buy-pearls-online-original.jpg"
+      },
+      {
+        "url": "https://modipearls.com/wp-content/uploads/2021/05/best-place-to-buy-pearls-online-original.jpg"
+      },
+    ],
+    "user_id": 15
+  },
+  {
+    "title": "Pearl and Diamond Earrings",
+    "description":
+      "Tiffany Victoria uses a unique combination of cuts for a distinctly romantic sensibility.",
+    "category": "pearl earrings ",
+    "rating": 5,
+    "price": 1200,
+    "num_reviews": 20,
+    "images": [
+      {
+        "url": "https://blingvine.com/cdn/shop/articles/Posh_Pearl_Studs_1100x.jpg?v=1636563521"
+      },
+      {
+        "url": "https://blingvine.com/cdn/shop/articles/Posh_Pearl_Studs_1100x.jpg?v=1636563521"
+      },
+      {
+        "url": "https://blingvine.com/cdn/shop/articles/Posh_Pearl_Studs_1100x.jpg?v=1636563521"
+      },
+      {
+        "url": "https://blingvine.com/cdn/shop/articles/Posh_Pearl_Studs_1100x.jpg?v=1636563521"
+      },
+    ],
+    "user_id": 15
+  },
+  {
+    "title": "Pearls by the Yard™ Chain Earrings",
+    "description":
+      "Floating on a delicate chain, pearls are sleek treasures harboring luminescence in their round profiles.",
+    "category": "pearl earrings ",
+    "rating": 5,
+    "price": 8550,
+    "num_reviews": 25,
+    "images": [
+      {
+        "url": "https://tulleluxbridalcrowns.com/cdn/shop/products/S7e4f027a62dc4e4a96aae928b9007fe2h_1445x.jpg"
+      },
+      {
+        "url": "https://tulleluxbridalcrowns.com/cdn/shop/products/S7e4f027a62dc4e4a96aae928b9007fe2h_1445x.jpg"
+      },
+      {
+        "url": "https://tulleluxbridalcrowns.com/cdn/shop/products/S7e4f027a62dc4e4a96aae928b9007fe2h_1445x.jpg"
+      },
+      {
+        "url": "https://tulleluxbridalcrowns.com/cdn/shop/products/S7e4f027a62dc4e4a96aae928b9007fe2h_1445x.jpg"
+      },
+    ],
+    "user_id": 15
+  },
+];
