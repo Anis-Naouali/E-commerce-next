@@ -1,7 +1,12 @@
-'use client'
-import React, { useState, ChangeEvent, useEffect } from "react";
-import axios from "axios";
+'use client';
+import React, { useState, ChangeEvent, useEffect } from 'react';
+import axios from 'axios';
 
+interface Image {
+  id: number;
+  url: string;
+  productId: number;
+}
 interface Data {
   title: string;
   description: string;
@@ -13,51 +18,23 @@ interface Data {
   user_id: number | null;
 }
 
-interface Image {
-  id: number;
-  url: string;
-  productId: number;
-}
 
 const AddProduct: React.FC = () => {
   const [product, setProduct] = useState<Data>({
-    title: "",
-    description: "",
-    category: "",
+    title: '',
+    description: '',
+    category: '',
     rating: 0,
     price: 0,
     num_reviews: 0,
     images: [],
-    user_id: null, 
+    user_id: 18,
   });
   const [imageFile, setImageFile] = useState<File | null>(null);
-  
-  useEffect(() => {
-    const mail = localStorage.getItem("mail");
-    if (mail) {
-      fetchUserIdByEmail(mail);
-    }
-  }, []);
-
-  const fetchUserIdByEmail = async (email: string) => {
-    try {
-      const response = await axios.get<number>(
-        `http://localhost:3000/api/users?email=${email}`
-      );
-      if (response.data) {
-        setProduct((prevProduct) => ({
-          ...prevProduct,
-          user_id: response.data,
-        }));
-      }
-    } catch (error) {
-      console.error("Error fetching user_id:", error);
-    }
-  };
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-    const numericValue = ["price", "rating"].includes(name) ? parseFloat(value) : value;
+    const numericValue = ['price', 'rating','num_reviews'].includes(name) ? parseFloat(value) : value;
     setProduct({
       ...product,
       [name]: numericValue,
@@ -71,48 +48,6 @@ const AddProduct: React.FC = () => {
     }
   };
 
-  const handleSubmit = async () => {
-    try {
-      let productData: Data = {
-        title: product.title,
-        description: product.description,
-        category: product.category,
-        rating: product.rating,
-        price: product.price,
-        num_reviews: product.num_reviews,
-        images: [],
-        user_id: product.user_id,
-      };
-
-      if (imageFile) {
-        const cloudinaryResponse = await uploadImageToCloudinary(imageFile);
-
-        if (cloudinaryResponse) {
-          productData = {
-            ...productData,
-            images: [
-              {
-                id: 0,
-                url: cloudinaryResponse.secure_url,
-                productId: 0,
-              },
-            ],
-          };
-        }
-      }
-
-      const response = await axios.post<Data>(
-        "http://localhost:3000/api/product",
-        productData
-      );
-
-      if (response.status === 200) {
-        console.log("Product added successfully");
-      }
-    } catch (error) {
-      console.error("Error adding product:", error);
-    }
-  };
 
   const uploadImageToCloudinary = async (imageFile: File) => {
     try {
@@ -121,17 +56,62 @@ const AddProduct: React.FC = () => {
       formData.append("upload_preset", "eh4mtnwx");
 
       const response = await axios.post(
-        "https://api.cloudinary.com/v1_1/dpc6syi3z/image/upload",
+        `https://api.cloudinary.com/v1_1/dpc6syi3z/image/upload`,
         formData
       );
 
       return response.data;
     } catch (error) {
-      console.error("Error uploading image to Cloudinary:", error);
+      console.error('Error uploading image to Cloudinary:', error);
       return null;
     }
   };
 
+  const handleSubmit = async () => {
+    try {
+      if (!imageFile) {
+        console.error("Please select an image.");
+        return;
+      }
+  
+      const cloudinaryResponse = await uploadImageToCloudinary(imageFile);
+  
+      if (!cloudinaryResponse) {
+        console.error("Error uploading image to Cloudinary.");
+        return;
+      }
+      const productData: Data = {
+        title: product.title,
+        description: product.description,
+        category: product.category,
+        rating: product.rating,
+        price: product.price,
+        num_reviews: product.num_reviews,
+        images: [
+          {
+            id: 0,
+            url: cloudinaryResponse.secure_url,
+            productId: 0,
+          },
+        ],
+        user_id: 18,
+      };
+  
+      const response = await axios.post<Data>(
+        "http://localhost:3000/api/product",
+        [productData]
+      );
+      console.log("🚀 ~ file: page.tsx:105 ~ handleSubmit ~ response:", response)
+  
+      if (response.status === 200) {
+        console.log("Product added successfully");
+      }
+    } catch (error) {
+      console.error("Error adding product:", error);
+    }
+  };
+  
+  
   return (
     <div>
       <h2>Add Product</h2>

@@ -1,4 +1,5 @@
 'use client'
+import RootLayout from '@/app/layout';
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import {
@@ -32,6 +33,8 @@ const UserList = () => {
   }, []);
 
   return (
+    <RootLayout role="admin" >
+
     <div className="px-4 py-8">
       <Typography variant="h2" gutterBottom>
         User List
@@ -60,6 +63,7 @@ const UserList = () => {
         </div>
       ))}
     </div>
+    </RootLayout>
   );
 };
 

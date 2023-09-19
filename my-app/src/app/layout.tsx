@@ -25,7 +25,7 @@ export default function RootLayout({
         {role !== 'admin' && <Header />}
         {role !== 'admin' && <Navbar />}
         {children}
-        <Footer showFooter={role !== 'admin'} />
+        <Footer />
       </body>
     </html>
   );

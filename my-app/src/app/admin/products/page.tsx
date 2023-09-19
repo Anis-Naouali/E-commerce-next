@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import Link from 'next/link'
+import RootLayout from '@/app/layout';
 
 interface Product {
   id: number;
@@ -50,6 +51,8 @@ const ProductList = () => {
   
 
   return (
+    <RootLayout role="admin" >
+
     <div className="px-4 py-8">
       <h2 className="text-2xl font-bold mb-4">Product List</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -83,6 +86,7 @@ const ProductList = () => {
         ))}
       </div>
     </div>
+    </RootLayout>
   );
 };
 
