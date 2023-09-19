@@ -113,72 +113,97 @@ const AddProduct: React.FC = () => {
   
   
   return (
-    <div>
-      <h2>Add Product</h2>
+    <div className="container mx-auto mt-10">
+      <h2 className="text-2xl font-semibold mb-4">Add Product</h2>
       <form>
-        <div>
-          <label>Name:</label>
+        <div className="mb-4">
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="title">
+            Name:
+          </label>
           <input
+            className="border rounded py-2 px-3 w-full"
             type="text"
             name="title"
             value={product.title}
             onChange={handleInputChange}
           />
         </div>
-        <div>
-          <label>Description:</label>
+        <div className="mb-4">
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="description">
+            Description:
+          </label>
           <input
+            className="border rounded py-2 px-3 w-full"
             type="text"
             name="description"
             value={product.description}
             onChange={handleInputChange}
           />
         </div>
-        <div>
-          <label>Category:</label>
+        <div className="mb-4">
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="category">
+            Category:
+          </label>
           <input
+            className="border rounded py-2 px-3 w-full"
             type="text"
             name="category"
             value={product.category}
             onChange={handleInputChange}
           />
         </div>
-        <div>
-          <label>Rating:</label>
+        <div className="mb-4">
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="rating">
+            Rating:
+          </label>
           <input
+            className="border rounded py-2 px-3 w-full"
             type="number"
             name="rating"
             value={product.rating}
             onChange={handleInputChange}
           />
         </div>
-        <div>
-          <label>Price:</label>
+        <div className="mb-4">
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="price">
+            Price:
+          </label>
           <input
+            className="border rounded py-2 px-3 w-full"
             type="number"
             name="price"
             value={product.price}
             onChange={handleInputChange}
           />
         </div>
-        <div>
-          <label>Number of Reviews:</label>
+        <div className="mb-4">
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="num_reviews">
+            Number of Reviews:
+          </label>
           <input
+            className="border rounded py-2 px-3 w-full"
             type="number"
             name="num_reviews"
             value={product.num_reviews}
             onChange={handleInputChange}
           />
         </div>
-        <div>
-          <label>Image:</label>
+        <div className="mb-4">
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="image">
+            Image:
+          </label>
           <input
+            className="border py-2 px-3 w-full"
             type="file"
             accept="image/*"
             onChange={handleImageUpload}
           />
         </div>
-        <button type="button" onClick={handleSubmit}>
+        <button
+          className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+          type="button"
+          onClick={handleSubmit}
+        >
           Add Product
         </button>
       </form>

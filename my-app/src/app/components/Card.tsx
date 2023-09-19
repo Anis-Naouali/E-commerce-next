@@ -87,7 +87,7 @@ const Card = (props: Props) => {
                 </div>
                 <div className="flex flex-row items-center justify-center gap-[0.75rem] text-secondary-2">
                     <div className="relative leading-[1.5rem] font-medium">
-                        {data.price}00$
+                        {data.price}$
                     </div>
                 </div>
             </div>
