@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 import Link from 'next/link';
 import RootLayout from '@/app/layout';
 import Chart, { ChartConfiguration } from "chart.js/auto";
-
+import axios from "axios";
 const AdminDashboard = () => {
   const canvasEl = useRef<HTMLCanvasElement | null>(null);
 
@@ -69,7 +69,21 @@ const AdminDashboard = () => {
       };
     }
   }, []);
+  const handleLogOut = async (event: any) => {
+    event.preventDefault();
 
+    try {
+      const response = await axios.post(
+        "http://localhost:3000/api/logout");
+      if (response.data.message) {
+        localStorage.clear()
+          window.location.href = "/";
+        }
+      }
+    catch (error) {
+      console.error(error);
+    };
+}
   return (
     <RootLayout role="admin" >
       <div className="admin-dashboard flex">
@@ -85,7 +99,12 @@ const AdminDashboard = () => {
             <li className="mb-2">
               <Link href="/admin/addProduct" className="text-white">Add Products</Link>
             </li>
+            <li className="mb-2">
+            <a href="/" className="text-white" onClick={handleLogOut}>
+                Log Out
+              </a>            </li>
           </ul>
+
         </div>
         
         <div className="content flex-1 p-4 bg-gray-200">

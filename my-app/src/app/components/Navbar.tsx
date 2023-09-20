@@ -6,6 +6,7 @@ import Link from 'next/link'
 import SearchBar from "./SearchBar"
 import ProfilNavBar from "./ProfilNavBar"
 import Logo from "./logo"
+import Login from '../login/page'
 
 const Navbar = () => {
   return (
@@ -34,6 +35,9 @@ const Navbar = () => {
             </li>
             <li className='self-center mr-6 cursor-pointer'>
                <Link href='/signup'> Sign Up</Link> 
+            </li>
+            <li className='self-center mr-6 cursor-pointer'>
+               <Link href='/login'> Login</Link> 
             </li>
 
             <li className='mr-6 cursor-pointer'>
