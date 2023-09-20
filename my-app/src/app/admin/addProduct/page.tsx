@@ -32,7 +32,7 @@ const AddProduct: React.FC = () => {
     price: 0,
     num_reviews: 0,
     images: [],
-    user_id: 18,
+    user_id: 3,
   });
   const [imageFile, setImageFile] = useState<File | null>(null);
 
@@ -98,7 +98,7 @@ const AddProduct: React.FC = () => {
             productId: 0,
           },
         ],
-        user_id: 18,
+        user_id: 3,
       };
   
       const response = await axios.post<Data>(
