@@ -38,7 +38,7 @@ export const GET = async (req: NextRequest) => {
       const fav = await prisma.fav.findMany({
         where: {
             user_id: UserId,
-        },
+        }
       });
 
       const product_id = fav.map((e) => e.product_id);
@@ -48,7 +48,12 @@ export const GET = async (req: NextRequest) => {
           id: {
             in: product_id,
           },
+          
         },
+        
+        include: {
+          images: true, 
+        }
       });
 
       return new Response(JSON.stringify({ data: products }), 

@@ -20,13 +20,14 @@ interface data {
   const [data, setdata] = useState<data[]>([]);
 
   const Id = localStorage.getItem("id");
-console.log(Id, "the id is ");
  
   useEffect(() => {
     const hi =async ()=>{
      await axios
       .get(`http://localhost:3000/api/favs?IdUser=${Id}`)
-      .then((res) => {
+      .then((res) => {    
+        console.log(res.data.data[0].images,"images");
+            
        setdata(res.data.data)
       })
       .catch((err) => {
@@ -53,6 +54,8 @@ console.log(Id, "the id is ");
 
 
           {data && data.map((e, i) => {
+              console.log(e.images[0].url,"image"); 
+
                   return (
                     <div className="flex flex-col items-center justify-center gap-[1rem] text-text">
                       <div className="relative rounded bg-secondary w-[16.88rem] h-[15.63rem] overflow-hidden shrink-0">
@@ -63,7 +66,7 @@ console.log(Id, "the id is ");
                           <img
                             className="absolute top-[0.13rem] left-[0.25rem] w-[11.38rem] h-[11rem] object-cover"
                             alt=""
-                            src="{e.images[0].url}"
+                            src={e.images[0].url}
                           />
                         </div>
                         <div className=" absolute top-[calc(50%_+_92px)] left-[calc(50%_-_51.5px)] w-35 flex flex-row items-center justify-start gap-[0.5rem] text-bg">
