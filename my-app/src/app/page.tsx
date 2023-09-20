@@ -928,7 +928,6 @@ export default function Home() {
 
 
                 {data1.map((e, i) => {
-                  console.log(e);
                   
                   return (
                     <div className="flex flex-col items-center justify-center gap-[1rem] text-text">
@@ -973,7 +972,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="rounded bg-button2 flex flex-row px-[3rem] items-center justify-center text-text">
+          <div className="rounded bg-div2 flex flex-row px-[3rem] items-center justify-center text-text">
             <button className="w-60 h-14 px-12 py-4 bg-red-500 rounded justify-center items-center gap-2.5 inline-flex" >
               <div className="text-neutral-50 text-base font-medium font-['Poppins'] leading-normal"><Link href="/allproducts">View all products</Link></div>
             </button>

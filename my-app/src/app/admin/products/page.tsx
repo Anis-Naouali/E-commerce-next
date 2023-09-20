@@ -52,7 +52,9 @@ const ProductList = () => {
 
   return (
     <RootLayout role="admin" >
-
+<button className=' mt-20 bg-black text-white font-bold top-[calc(50%_+_92px)] left-[calc(50%_-_51.5px)] w-40 rounded py-2 ml-10'>
+        <Link href="/admin/dash">Dashboard</Link>
+        </button>
     <div className="px-4 py-8">
       <h2 className="text-2xl font-bold mb-4">Product List</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

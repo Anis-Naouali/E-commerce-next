@@ -3,7 +3,7 @@ import React, { useState, useEffect, ChangeEvent } from "react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import RootLayout from '@/app/layout';
-
+import Link from "next/link";
 
 interface Image {
   id: number;
@@ -41,11 +41,9 @@ const UpdateProduct: React.FC<Props> = ({ productId }) => {
   });
   const [imageFile, setImageFile] = useState<File | null>(null);
   const [productImages, setProductImages] = useState<Image[]>([]);
-console.log(updatedProduct,"updateed")
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const productid = Number(params.get("ID"));
-    console.log("Extracted productid:", productid);
     setId(productid);
 
     if (!isNaN(productid)) {
@@ -137,7 +135,14 @@ console.log(typeof(updatedProduct.price));
   return (
     <RootLayout role="admin" >
 
-    <div>
+    <div className="pl-40 pt-20">
+    <button className=' mt-20 bg-black text-white font-bold top-[calc(50%_+_92px)] left-[calc(50%_-_51.5px)] w-40 rounded py-2 mb-10'>
+        <Link href="/admin/dash">Dashboard</Link>
+        </button>
+
+        <button className='ml-20 mt-20 bg-black text-white font-bold top-[calc(50%_+_92px)] left-[calc(50%_-_51.5px)] w-40 rounded py-2 mb-10'>
+        <Link href="/admin/products">Products</Link>
+        </button>
       {updatedProduct !== null && (
         <>
           <h2 className="text-xl font-semibold mb-4">Edit Product</h2>

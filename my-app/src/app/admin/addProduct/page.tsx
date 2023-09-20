@@ -1,7 +1,9 @@
 'use client';
-import React, { useState, ChangeEvent, useEffect } from 'react';
+import React, { useState, ChangeEvent, } from 'react';
 import axios from 'axios';
-
+import { useRouter } from "next/navigation";
+import RootLayout from '@/app/layout';
+import Link from 'next/link';
 interface Image {
   id: number;
   url: string;
@@ -20,6 +22,8 @@ interface Data {
 
 
 const AddProduct: React.FC = () => {
+  const router = useRouter();
+
   const [product, setProduct] = useState<Data>({
     title: '',
     description: '',
@@ -101,8 +105,7 @@ const AddProduct: React.FC = () => {
         "http://localhost:3000/api/product",
         [productData]
       );
-      console.log("🚀 ~ file: page.tsx:105 ~ handleSubmit ~ response:", response)
-  
+      router.push("/admin/products");
       if (response.status === 200) {
         console.log("Product added successfully");
       }
@@ -113,7 +116,13 @@ const AddProduct: React.FC = () => {
   
   
   return (
-    <div className="container mx-auto mt-10">
+    <RootLayout role="admin" >
+      
+
+    <div className="container mx-auto mt-10  w-1/2 mb-20" >
+    <button className=' mt-20 bg-black text-white font-bold top-[calc(50%_+_92px)] left-[calc(50%_-_51.5px)] w-40 rounded py-2 mb-10'>
+        <Link href="/admin/products">Products</Link>
+        </button>
       <h2 className="text-2xl font-semibold mb-4">Add Product</h2>
       <form>
         <div className="mb-4">
@@ -208,6 +217,7 @@ const AddProduct: React.FC = () => {
         </button>
       </form>
     </div>
+    </RootLayout>
   );
 };
 
